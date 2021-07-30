@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+// GLOBAL CLASSES START
+$themeColor: #161e2d;
+$themeColor2: #1f2937;
+$themeColor3: #01b0f9;
+$textColor: #e5e7eb;
+$textColor2: #d1d5db;
+$hrColor: #374151;
+// GLOBAL CLASSES START
+
+// GLOBAL CLASSES START
+body {
+	overflow-x: hidden;
+	background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+}
+html {
+	width: 100%;
+	font-size: 100%;
+	overflow-x: hidden;
+	scroll-behavior: auto !important;
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 100%;
+	}
+}
+@media screen and (max-width: 668px) {
+	html {
+		font-size: 92%;
+	}
+}
+@media screen and (max-width: 575px) {
+	html {
+		font-size: 88%;
+	}
+}
+@media screen and (max-width: 475px) {
+	html {
+		font-size: 84%;
+	}
+}
+@media screen and (max-width: 380px) {
+	html {
+		font-size: 80%;
+	}
+}
+@media screen and (max-width: 280px) {
+	html {
+		font-size: 76%;
+	}
+}
+
+.page_container {
+	max-width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.f500 {
+	font-weight: 500;
+}
+
+.textColor {
+	color: $textColor;
+}
+
+.textColor2 {
+	color: $textColor2;
+}
+
+.f600 {
+	font-weight: 600;
+}
+
+.themeBlue {
+	color: $themeColor3;
+}
+
+.f14 {
+	font-size: 0.875rem;
+}
+
+hr {
+	color: $hrColor;
+	padding: 1px;
+}
+
+a:hover,
+a:hover {
+	color: $textColor;
+}
+
+// HEADER START
+.header_container {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background: $themeColor2;
+	width: 100%;
+	height: 72px;
+	border-bottom: 2px solid $themeColor3;
+	border-top: 1px solid $themeColor3;
+
+	ul {
+		li {
+			font-size: 0.875rem;
+			line-height: 17px;
+			padding: 18px;
+
+			a {
+				transition: 0.6s;
+			}
+			a:hover {
+				color: $themeColor3;
+			}
+		}
+		.line {
+			padding: 1px;
+			background: #374151;
+			height: 22px;
+		}
+	}
+}
+// HEADER END
+
+// HERO START
+.hero_container {
+	padding-top: 10rem;
+
+	.btn_container {
+		button:nth-child(1) {
+			background: #ffffff;
+			border-radius: 8px;
+			width: 111px;
+			height: 44px;
+		}
+		button:nth-child(2) {
+			width: 145px;
+			height: 44px;
+			background: #1f2937;
+			border: 1px solid #374151;
+			border-radius: 8px;
+			color: $textColor2;
+		}
+	}
+
+	h1 {
+		font-weight: 800;
+		color: #fff;
+		font-size: 3rem;
+		line-height: 48px;
+	}
+}
+// HERO END
+
+// THREE CARDS START
+.threeCards_container {
+	padding: 6rem 0rem 3rem 0rem;
+}
+// THREE CARDS END
+
+// SERVICES START
+.services_container {
+	padding: 4rem 0rem 5rem 0rem;
+
+	h1 {
+		font-weight: 800;
+		font-size: 1.5rem;
+		line-height: 32px;
+	}
+
+	p {
+		line-height: 21px;
+	}
+
+	button {
+		width: 125px;
+		height: 44px;
+		background: #1f2937;
+		border: 1px solid #374151;
+		border-radius: 8px;
+	}
+}
+// SERVICES END
+
+// MEDIA QUERIES START
+@media screen and (max-width: 998px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 575px) {
+}
+// MEDIA QUERIES END
