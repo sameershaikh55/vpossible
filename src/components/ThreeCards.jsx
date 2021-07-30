@@ -29,22 +29,26 @@ const ThreeCards = () => {
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
-							{data.map((p, ind) => {
-								const { i, t, d } = p;
-								return (
-									<div key={ind} className="col-4">
-										<div className="d-flex">
-											<div>
-												<img src={i} alt="" />
+							<div className="col-11 col-md-12 mx-auto">
+								<div className="row">
+									{data.map((p, ind) => {
+										const { i, t, d } = p;
+										return (
+											<div key={ind} className="col-12 col-md-6 col-lg-4 mt-4">
+												<div className="d-flex">
+													<div>
+														<img src={i} alt="" />
+													</div>
+													<div className="ms-3">
+														<h5 className="text-white f14">{t}</h5>
+														<p className="textColor2 f14">{d}</p>
+													</div>
+												</div>
 											</div>
-											<div className="ms-3">
-												<h5 className="text-white f14">{t}</h5>
-												<p className="textColor2 f14">{d}</p>
-											</div>
-										</div>
-									</div>
-								);
-							})}
+										);
+									})}
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
