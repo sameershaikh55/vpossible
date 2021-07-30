@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#1f2937), to(#111827));
   background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 html {
@@ -261,6 +263,45 @@ a:hover {
   line-height: 21px;
 }
 
+.support_container {
+  height: calc(100vh - 160px);
+  margin-top: 10rem;
+}
+
+.support_container h1 {
+  font-size: 2rem;
+}
+
+.support_container p {
+  line-height: 26px;
+}
+
+.support_container p a {
+  color: #01b0f9;
+  border: none;
+  background: transparent;
+}
+
+.support_container .line {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 2px;
+}
+
+.support_container a {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+}
+
+.support_container a:hover {
+  color: #01b0f9;
+}
+
+.support_container button {
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 998px) {
   .serviceBanner_container {
     margin-top: 7rem;
@@ -311,6 +352,15 @@ a:hover {
   }
   .serviceBanner_container .responsive_image {
     margin: -4rem 0rem -6rem 0rem;
+  }
+  .support_container a {
+    width: 100%;
+  }
+  .support_container {
+    height: 100%;
+  }
+  .support_container button {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

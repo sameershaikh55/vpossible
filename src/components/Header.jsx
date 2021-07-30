@@ -12,7 +12,9 @@ const Header = () => {
 				<div className="container-fluid h-100">
 					<div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center h-100">
 						<div>
-							<img src={logo} alt="logo" />
+							<NavLink to="/">
+								<img src={logo} alt="logo" />
+							</NavLink>
 						</div>
 						<div className="mt-3 mt-md-0">
 							<ul className="list-unstyled d-flex align-items-center mb-0 textColor">
@@ -25,7 +27,10 @@ const Header = () => {
 									</NavLink>
 								</li>
 								<li className="fw500">
-									<NavLink to="" className="text-decoration-none textColor">
+									<NavLink
+										to="/support"
+										className="text-decoration-none textColor"
+									>
 										Support
 									</NavLink>
 								</li>

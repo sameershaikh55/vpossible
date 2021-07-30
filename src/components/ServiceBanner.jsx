@@ -44,7 +44,7 @@ const ServiceBanner = () => {
 						</div>
 					</div>
 
-					<div className="responsive_image">
+					<div className="responsive_image d-block d-md-none">
 						<img className="w-100" src={serviceRes} alt="" />
 					</div>
 					<div className="text-center d-block d-md-none mt-4">

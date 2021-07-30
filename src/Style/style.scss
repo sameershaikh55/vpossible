@@ -20,6 +20,8 @@ $hrColor: #374151;
 body {
 	overflow-x: hidden;
 	background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+	width: 100%;
+	background-repeat: no-repeat;
 }
 html {
 	width: 100%;
@@ -274,6 +276,47 @@ a:hover {
 }
 // SERVICE BODY END
 
+// SUPPORT BODY START
+.support_container {
+	height: calc(100vh - 160px);
+	margin-top: 10rem;
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		line-height: 26px;
+
+		a {
+			color: $themeColor3;
+			border: none;
+			background: transparent;
+		}
+	}
+
+	.line {
+		height: 100%;
+		background: rgba(255, 255, 255, 0.1);
+		width: 2px;
+	}
+
+	a {
+		background: #1f2937;
+		border: 1px solid #374151;
+		border-radius: 8px;
+
+		&:hover {
+			color: #01b0f9;
+		}
+	}
+
+	button {
+		border-radius: 8px;
+	}
+}
+// SUPPORT BODY END
+
 // MEDIA QUERIES START
 @media screen and (max-width: 998px) {
 	.serviceBanner_container {
@@ -331,6 +374,16 @@ a:hover {
 	.serviceBanner_container {
 		.responsive_image {
 			margin: -4rem 0rem -6rem 0rem;
+		}
+	}
+	.support_container a {
+		width: 100%;
+	}
+	.support_container {
+		height: 100%;
+
+		button {
+			width: 100%;
 		}
 	}
 }
