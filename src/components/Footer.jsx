@@ -1,6 +1,7 @@
 import React from "react";
 
 import { SiFacebook, SiTwitter, SiLinkedin } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -9,10 +10,26 @@ const Footer = () => {
 				<hr />
 				<div className="container-fluid pt-4 pb-4">
 					<ul className="list-unstyled d-flex justify-content-center">
-						<li className="textColor f14 ">Services</li>
-						<li className="textColor f14 ms-4">About</li>
-						<li className="textColor f14 ms-4">Contact</li>
-						<li className="textColor f14 ms-4">Support</li>
+						<li className="f14">
+							<NavLink className="textColor text-decoration-none" to="/service">
+								Services
+							</NavLink>
+						</li>
+						<li className="f14 ms-4">
+							<NavLink className="textColor text-decoration-none" to="/about">
+								About
+							</NavLink>
+						</li>
+						<li className="f14 ms-4">
+							<NavLink className="textColor text-decoration-none" to="/contact">
+								Contact
+							</NavLink>
+						</li>
+						<li className="f14 ms-4">
+							<NavLink className="textColor text-decoration-none" to="/support">
+								Support
+							</NavLink>
+						</li>
 					</ul>
 
 					<div className="d-flex justify-content-center mt-4">

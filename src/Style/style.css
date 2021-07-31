@@ -19,7 +19,6 @@ html {
   width: 100%;
   font-size: 100%;
   overflow-x: hidden;
-  scroll-behavior: auto !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -98,11 +97,12 @@ a:hover {
   position: fixed;
   top: 0%;
   left: 0%;
-  background: #1f2937;
+  background: #161e2d;
   width: 100%;
   height: 72px;
   border-bottom: 2px solid #01b0f9;
   border-top: 1px solid #01b0f9;
+  z-index: 10;
 }
 
 .header_container ul li {
@@ -300,6 +300,32 @@ a:hover {
 
 .support_container button {
   border-radius: 8px;
+}
+
+.about_body_container {
+  margin-top: 8rem;
+}
+
+.about_body_container .btns {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+}
+
+.about_body_container .upPara {
+  line-height: 26px;
+}
+
+.about_body_container .downPara {
+  line-height: 21px;
+}
+
+.about_body_container .bottomCont h6 {
+  line-height: 20px;
+}
+
+.about_body_container h5 {
+  line-height: 32px;
 }
 
 @media screen and (max-width: 998px) {
