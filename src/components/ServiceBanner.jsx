@@ -19,7 +19,7 @@ const ServiceBanner = () => {
 										<img className="w-100" src={service1} alt="" />
 									</div>
 									<div className="cont">
-										<h6 className="text-uppercase textColor2 f600 text-start text-md-center f14">
+										<h6 className="text-uppercase textColor2 f600 text-start text-md-center f14 mb-2">
 											Services
 										</h6>
 										<h1 className="text-start text-md-center f800">
@@ -32,7 +32,7 @@ const ServiceBanner = () => {
 											of IT services, we’re confident that you’ll find something
 											to fits your needs.
 										</p>
-										<div className="text-center d-none d-md-block">
+										<div className="text-center d-none d-md-block mt-4">
 											<IoIosArrowDown className="themeBlue h5" />
 										</div>
 									</div>

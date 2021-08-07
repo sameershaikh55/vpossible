@@ -36,7 +36,10 @@ const Header = () => {
 								</li>
 								<li className="line"></li>
 								<li className="fw500">
-									<NavLink to="" className="text-decoration-none textColor">
+									<NavLink
+										to="/contact"
+										className="text-decoration-none textColor"
+									>
 										Get In-Touch <FiArrowRight color="#9CA3AF" />
 									</NavLink>
 								</li>

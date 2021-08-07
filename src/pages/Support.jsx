@@ -18,24 +18,27 @@ const Support = () => {
 							<div className="col-11 col-lg-12 mx-auto">
 								<div className="row">
 									<div className="col-md-6 col-lg-4">
-										<h1 className="text-white">Need assistance?</h1>
+										<h1 className="text-white mb-3">Need assistance?</h1>
 										<p className="textColor2">
 											Please use the following contact lines for technical
 											support requests only. For all other enquiries, please
 											complete the form on the{" "}
-											<NavLink className="text-decoration-none" to="">
+											<NavLink
+												className="textLink text-decoration-none"
+												to="/contact"
+											>
 												Contact
 											</NavLink>{" "}
 											page.
 										</p>
-										<hr className="my-5" />
+										<hr className="my-5 d-block d-md-none" />
 									</div>
-									<div className="col-1">
+									<div className="col-1 px-0">
 										<div className="line ms-auto"></div>
 									</div>
-									<div className="col-md-5 col-lg-7 ps-3">
+									<div className="col-md-5 col-lg-7 ps-2 ps-md-5">
 										<div className="mb-4">
-											<p className="mb-2 text-white f14">Send an Email</p>
+											<p className="mb6 text-white f14">Send an Email</p>
 											<div className="w-100">
 												<a
 													href="mailto:support@vpossible.com.au"
@@ -47,7 +50,7 @@ const Support = () => {
 										</div>
 
 										<div className="mb-4">
-											<p className="mb-2 text-white f14">Call Us</p>
+											<p className="mb6 text-white f14">Call Us</p>
 											<div className="w-100">
 												<a
 													href="tel:+61 3 9088 6275"
@@ -60,7 +63,7 @@ const Support = () => {
 
 										<div>
 											<p className="text-white mb-2 f14">Contact an Agent</p>
-											<button className="text-dark f14 px-3 py-2 border-0">
+											<button className="text-dark f600 f14 px-3 py-2 border-0">
 												Activate LiveChat
 											</button>
 										</div>

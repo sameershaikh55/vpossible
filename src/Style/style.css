@@ -19,6 +19,7 @@ html {
   width: 100%;
   font-size: 100%;
   overflow-x: hidden;
+  background: #161e2d;
 }
 
 @media screen and (max-width: 992px) {
@@ -29,13 +30,13 @@ html {
 
 @media screen and (max-width: 668px) {
   html {
-    font-size: 92%;
+    font-size: 98%;
   }
 }
 
 @media screen and (max-width: 575px) {
   html {
-    font-size: 86%;
+    font-size: 96%;
   }
 }
 
@@ -63,6 +64,10 @@ html {
   color: #d1d5db;
 }
 
+.f500 {
+  font-weight: 500;
+}
+
 .f600 {
   font-weight: 600;
 }
@@ -83,6 +88,10 @@ html {
   font-size: 3rem;
 }
 
+.mb6 {
+  margin-bottom: 6px;
+}
+
 hr {
   color: #374151;
   padding: 1px;
@@ -100,15 +109,14 @@ a:hover {
   background: #161e2d;
   width: 100%;
   height: 72px;
-  border-bottom: 2px solid #01b0f9;
-  border-top: 1px solid #01b0f9;
+  border-bottom: 3px solid #01b0f9;
   z-index: 10;
 }
 
 .header_container ul li {
   font-size: 0.875rem;
   line-height: 17px;
-  padding: 0px 18px;
+  margin: 0px 12px;
 }
 
 .header_container ul li a {
@@ -127,23 +135,41 @@ a:hover {
 }
 
 .hero_container {
-  padding-top: 10rem;
+  padding-top: 169px;
 }
 
-.hero_container .btn_container button:nth-child(1) {
+.hero_container .bottomText {
+  margin-bottom: 32px;
+  line-height: 26px;
+}
+
+.hero_container .btn_container a:nth-child(1) button {
   background: #ffffff;
   border-radius: 8px;
   width: 111px;
   height: 44px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
-.hero_container .btn_container button:nth-child(2) {
+.hero_container .btn_container a:nth-child(1) button:hover {
+  background: #ebebeb;
+}
+
+.hero_container .btn_container a:nth-child(2) button {
   width: 145px;
   height: 44px;
   background: #1f2937;
   border: 1px solid #374151;
   border-radius: 8px;
   color: #d1d5db;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.hero_container .btn_container a:nth-child(2) button:hover {
+  border: 1px solid #01b0f9;
+  color: #01b0f9;
 }
 
 .hero_container h1 {
@@ -154,7 +180,7 @@ a:hover {
 }
 
 .threeCards_container {
-  padding: 4rem 0rem 3rem 0rem;
+  padding: 96px 0rem 58px 0rem;
 }
 
 .services_container {
@@ -181,6 +207,13 @@ a:hover {
   background: #1f2937;
   border: 1px solid #374151;
   border-radius: 8px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.services_container button:hover {
+  border: 1px solid #01b0f9;
+  color: #01b0f9;
 }
 
 .started_container {
@@ -189,12 +222,16 @@ a:hover {
   -webkit-box-shadow: 0px 0px 60px 20px rgba(1, 176, 249, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 60px 20px rgba(1, 176, 249, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  height: 200px;
+  height: 232px;
   overflow: hidden;
 }
 
 .started_container img {
   height: 100%;
+}
+
+.started_container .first {
+  margin: 40px 0px;
 }
 
 .started_container .first h6 {
@@ -206,20 +243,52 @@ a:hover {
   font-size: 1.875rem;
 }
 
+.started_container .first .topText {
+  margin-bottom: 10px;
+}
+
+.started_container .first .btn_cont {
+  margin-top: 32px;
+}
+
+.started_container .first .btn_cont button {
+  height: 44px;
+  width: 105px;
+}
+
 .started_container .first button {
+  background: #ffff;
   border-radius: 6px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.started_container .first button:hover {
+  background: #ebebeb;
 }
 
 .footer_container {
-  margin-top: 4rem;
+  margin-top: 72px;
 }
 
 .footer_container p {
   color: #6b7280;
 }
 
+.footer_container .share_btn {
+  margin: 32px 0px 28px 0px;
+}
+
+.footer_container ul li {
+  margin-left: 32px;
+}
+
+.footer_container ul li:nth-child(1) {
+  margin-left: 0px;
+}
+
 .serviceBanner_container {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .serviceBanner_container .innerServiceContainer {
@@ -270,9 +339,11 @@ a:hover {
 
 .support_container h1 {
   font-size: 2rem;
+  font-weight: 800;
 }
 
 .support_container p {
+  font-weight: 500;
   line-height: 26px;
 }
 
@@ -292,14 +363,28 @@ a:hover {
   background: #1f2937;
   border: 1px solid #374151;
   border-radius: 8px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .support_container a:hover {
+  border: 1px solid #01b0f9;
   color: #01b0f9;
 }
 
 .support_container button {
   border-radius: 8px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.support_container button:hover {
+  background: #ebebeb;
+}
+
+.support_container .textLink:hover {
+  color: #01b0f9;
+  border: none;
 }
 
 .about_body_container {
@@ -310,6 +395,7 @@ a:hover {
   background: #1f2937;
   border: 1px solid #374151;
   border-radius: 8px;
+  height: 44px;
 }
 
 .about_body_container .upPara {
@@ -326,6 +412,113 @@ a:hover {
 
 .about_body_container h5 {
   line-height: 32px;
+}
+
+.about_body_container .iconText {
+  margin-left: 12px;
+}
+
+.about_body_container .oMission {
+  margin-bottom: 6px;
+}
+
+.contact_container {
+  margin-top: 9rem;
+  height: calc(100vh - 144px);
+}
+
+.contact_container h1 {
+  font-size: 2rem;
+}
+
+.contact_container p {
+  line-height: 26px;
+}
+
+.contact_container p a {
+  color: #01b0f9;
+  border: none;
+  background: transparent;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.contact_container p a:hover {
+  background: #ebebeb;
+  border: none;
+}
+
+.contact_container p .textLink:hover {
+  color: #01b0f9;
+  background-color: transparent;
+  border: none;
+}
+
+.contact_container .line {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 1px;
+}
+
+.contact_container a {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.contact_container a:hover {
+  border: 1px solid #01b0f9;
+  color: #01b0f9;
+}
+
+.contact_container button {
+  border-radius: 8px;
+  height: 44px;
+}
+
+.contact_container .form_container input,
+.contact_container .form_container textarea {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #d1d5db;
+  height: 38px;
+  font-size: 14px;
+}
+
+.contact_container .form_container input:focus,
+.contact_container .form_container textarea:focus {
+  outline: none;
+}
+
+.contact_container .form_container textarea {
+  resize: none;
+}
+
+.contact_container .form_container textarea:focus {
+  outline: none;
+}
+
+.contact_container .mtContact {
+  margin-top: 20px;
+}
+
+.contact_container .mtContact:nth-child(1) {
+  margin-top: 0px;
+}
+
+.contact_container .mtContact:nth-child(2) {
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 1500px) {
+  .page_container {
+    max-width: 1376px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 998px) {
@@ -358,20 +551,30 @@ a:hover {
     font-size: 1.875rem;
     line-height: 30px;
   }
-  .hero_container .bottomText {
-    line-height: 26px;
+  .hero_container .btn_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .hero_container .btn_container button:nth-child(1) {
+  .hero_container .btn_container a:nth-child(1) button,
+  .hero_container .btn_container a:nth-child(2) button {
     width: 100%;
   }
-  .hero_container .btn_container button:nth-child(2) {
-    width: 100%;
+  .hero_container .btn_container a:nth-child(2) button {
+    margin-top: 12px;
   }
   .services_container button {
     width: 100%;
   }
   .started_container {
     height: 100%;
+  }
+  .started_container .first {
+    margin: 0px 0px;
   }
   .started_container .first button {
     width: 100%;
@@ -380,10 +583,43 @@ a:hover {
     margin: -4rem 0rem -6rem 0rem;
   }
   .support_container a {
-    width: 100%;
+    width: 45%;
   }
   .support_container {
     height: 100%;
+  }
+  .support_container button {
+    width: 45%;
+  }
+  .contact_container a {
+    width: 100%;
+  }
+  .support_container {
+    margin-top: 9rem;
+  }
+  .started_container .first .btn_cont button {
+    width: 100%;
+  }
+  .threeCards_container {
+    padding: 12px 0rem 58px 0rem;
+  }
+  .services_container {
+    padding: 4rem 0rem 56px 0rem;
+  }
+  .contact_container {
+    height: 100%;
+  }
+  .contact_container .mtContact:nth-child(1) {
+    margin-top: 20px;
+  }
+  .contact_container .mtContact:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .support_container a {
+    width: 100%;
   }
   .support_container button {
     width: 100%;

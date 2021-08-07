@@ -1,9 +1,10 @@
 import React from "react";
 
 // IMPORTS
-import service from "../assets/service.svg";
+import service from "../assets/service.png";
 import { FiArrowRight } from "react-icons/fi";
 import { GoCheck } from "react-icons/go";
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
 	return (
@@ -16,7 +17,7 @@ const Services = () => {
 								<div className="col-md-5 col-lg-4">
 									<img className="w-100" src={service} alt="" />
 								</div>
-								<div className="mt-5 mt-md-0 col-md-7 offset-lg-1">
+								<div className="mt-4 mt-md-0 mt-md-0 col-md-7 offset-lg-1">
 									<p className="themeBlue text-uppercase f14 f600 mb-2">
 										Services
 									</p>
@@ -30,9 +31,9 @@ const Services = () => {
 										business, home, or Company.
 									</p>
 
-									<div className="row mt-4 mb-1">
+									<div className="row my-4">
 										<ul className="col-md-6 list-unstyled">
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -40,7 +41,7 @@ const Services = () => {
 												/>{" "}
 												Managed IT Services
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -48,7 +49,7 @@ const Services = () => {
 												/>{" "}
 												Cloud Services
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -56,7 +57,7 @@ const Services = () => {
 												/>{" "}
 												Cloud & IT Infrastructure
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -66,7 +67,7 @@ const Services = () => {
 											</li>
 										</ul>
 										<ul className="col-md-6 list-unstyled">
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -74,7 +75,7 @@ const Services = () => {
 												/>{" "}
 												IT Consultancy
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -82,7 +83,7 @@ const Services = () => {
 												/>{" "}
 												Communications
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -90,7 +91,7 @@ const Services = () => {
 												/>{" "}
 												IT Security
 											</li>
-											<li className="text-white f14 mb-2">
+											<li className="text-white f14 mb-3">
 												<GoCheck
 													color="#12D28D"
 													fontSize="1.1rem"
@@ -100,10 +101,12 @@ const Services = () => {
 											</li>
 										</ul>
 									</div>
-									<div className="mt-4 mt-md-0">
-										<button className="textColor2 f14">
-											Learn More <FiArrowRight color="#9CA3AF" />
-										</button>
+									<div>
+										<NavLink to="/service">
+											<button className="textColor2 f14">
+												Learn More <FiArrowRight color="#9CA3AF" />
+											</button>
+										</NavLink>
 									</div>
 								</div>
 							</div>

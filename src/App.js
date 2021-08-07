@@ -8,6 +8,7 @@ import Services from "./pages/Services.jsx";
 import Support from "./pages/Support.jsx";
 import About from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route exact path="/service" component={Services} />
 				<Route exact path="/support" component={Support} />
 				<Route exact path="/about" component={About} />
+				<Route exact path="/contact" component={Contact} />
 			</Switch>
 		</div>
 	);

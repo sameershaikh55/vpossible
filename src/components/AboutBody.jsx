@@ -34,7 +34,7 @@ const AboutBody = () => {
 
 	return (
 		<div className="about_body_container">
-			<div className="col-12 col-md-5">
+			<div className="col-12 col-md-5 d-block d-md-none">
 				<img className="w-100" src={about} alt="" />
 			</div>
 			<div className="page_container">
@@ -46,10 +46,10 @@ const AboutBody = () => {
 									<img className="w-100" src={about} alt="" />
 								</div>
 								<div className="col-12 col-md-7 mt-5 mt-md-0">
-									<h6 className="text-uppercase textColor2 f600 f14">
+									<h6 className="text-uppercase textColor2 f600 f14 mb-3">
 										WHo Are we
 									</h6>
-									<h1 className="f800">
+									<h1 className="f800 mb-3">
 										<span className="text-white">An Australian business,</span>
 										<br />
 										<span className="themeBlue">
@@ -79,15 +79,17 @@ const AboutBody = () => {
 													<div className="mb-0">
 														<img src={i} alt="" />
 													</div>
-													<div className="text-white ms-2 f14 mb-0">{t}</div>
+													<div className="iconText text-white f14 mb-0">
+														{t}
+													</div>
 												</div>
 											);
 										})}
 									</div>
 
-									<hr className="my-5" />
+									<hr style={{ margin: "64px 0px" }} />
 
-									<h6 className="text-uppercase themeBlue f600 f14">
+									<h6 className="oMission text-uppercase themeBlue f600 f14">
 										Our Mission
 									</h6>
 									<h4 className="text-white f800">Consistency is our mantra</h4>

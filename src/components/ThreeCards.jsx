@@ -34,12 +34,15 @@ const ThreeCards = () => {
 									{data.map((p, ind) => {
 										const { i, t, d } = p;
 										return (
-											<div key={ind} className="col-12 col-md-6 col-lg-4 mt-4">
+											<div
+												key={ind}
+												className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0"
+											>
 												<div className="d-flex">
 													<div>
 														<img src={i} alt="" />
 													</div>
-													<div className="ms-3">
+													<div className="ms-4">
 														<h5 className="text-white f14">{t}</h5>
 														<p className="textColor2 f14">{d}</p>
 													</div>
@@ -53,7 +56,7 @@ const ThreeCards = () => {
 					</div>
 				</div>
 			</div>
-			<div className="page_container">
+			<div className="page_container px-4 px-md-0">
 				<hr />
 			</div>
 		</>

@@ -27,6 +27,7 @@ html {
 	width: 100%;
 	font-size: 100%;
 	overflow-x: hidden;
+	background: $themeColor;
 	// scroll-behavior: auto !important;
 }
 @media screen and (max-width: 992px) {
@@ -36,12 +37,12 @@ html {
 }
 @media screen and (max-width: 668px) {
 	html {
-		font-size: 92%;
+		font-size: 98%;
 	}
 }
 @media screen and (max-width: 575px) {
 	html {
-		font-size: 86%;
+		font-size: 96%;
 	}
 }
 @media screen and (max-width: 475px) {
@@ -68,6 +69,10 @@ html {
 	color: $textColor2;
 }
 
+.f500 {
+	font-weight: 500;
+}
+
 .f600 {
 	font-weight: 600;
 }
@@ -88,6 +93,10 @@ html {
 	font-size: 3rem;
 }
 
+.mb6 {
+	margin-bottom: 6px;
+}
+
 hr {
 	color: $hrColor;
 	padding: 1px;
@@ -106,15 +115,14 @@ a:hover {
 	background: $themeColor;
 	width: 100%;
 	height: 72px;
-	border-bottom: 2px solid $themeColor3;
-	border-top: 1px solid $themeColor3;
+	border-bottom: 3px solid $themeColor3;
 	z-index: 10;
 
 	ul {
 		li {
 			font-size: 0.875rem;
 			line-height: 17px;
-			padding: 0px 18px;
+			margin: 0px 12px;
 
 			a {
 				transition: 0.6s;
@@ -134,22 +142,38 @@ a:hover {
 
 // HERO START
 .hero_container {
-	padding-top: 10rem;
+	padding-top: 169px;
+
+	.bottomText {
+		margin-bottom: 32px;
+		line-height: 26px;
+	}
 
 	.btn_container {
-		button:nth-child(1) {
+		a:nth-child(1) button {
 			background: #ffffff;
 			border-radius: 8px;
 			width: 111px;
 			height: 44px;
+			transition: 0.6s;
+
+			&:hover {
+				background: #ebebeb;
+			}
 		}
-		button:nth-child(2) {
+		a:nth-child(2) button {
 			width: 145px;
 			height: 44px;
 			background: #1f2937;
 			border: 1px solid #374151;
 			border-radius: 8px;
 			color: $textColor2;
+			transition: 0.6s;
+
+			&:hover {
+				border: 1px solid $themeColor3;
+				color: $themeColor3;
+			}
 		}
 	}
 
@@ -164,7 +188,7 @@ a:hover {
 
 // THREE CARDS START
 .threeCards_container {
-	padding: 4rem 0rem 3rem 0rem;
+	padding: 96px 0rem 58px 0rem;
 }
 // THREE CARDS END
 
@@ -192,6 +216,12 @@ a:hover {
 		background: #1f2937;
 		border: 1px solid #374151;
 		border-radius: 8px;
+		transition: 0.6s;
+
+		&:hover {
+			border: 1px solid $themeColor3;
+			color: $themeColor3;
+		}
 	}
 }
 // SERVICES END
@@ -202,7 +232,7 @@ a:hover {
 	box-shadow: 0px 0px 60px 20px rgba(1, 176, 249, 0.1),
 		0px 1px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 16px;
-	height: 200px;
+	height: 232px;
 	overflow: hidden;
 
 	img {
@@ -210,6 +240,8 @@ a:hover {
 	}
 
 	.first {
+		margin: 40px 0px;
+
 		h6 {
 			color: rgba(255, 255, 255, 0.7);
 		}
@@ -217,8 +249,25 @@ a:hover {
 			line-height: 30px;
 			font-size: 1.875rem;
 		}
+		.topText {
+			margin-bottom: 10px;
+		}
+		.btn_cont {
+			margin-top: 32px;
+
+			button {
+				height: 44px;
+				width: 105px;
+			}
+		}
 		button {
+			background: #ffff;
 			border-radius: 6px;
+			transition: 0.6s;
+
+			&:hover {
+				background: #ebebeb;
+			}
 		}
 	}
 }
@@ -226,17 +275,30 @@ a:hover {
 
 // FOOTER START
 .footer_container {
-	margin-top: 4rem;
+	margin-top: 72px;
 
 	p {
 		color: #6b7280;
+	}
+
+	.share_btn {
+		margin: 32px 0px 28px 0px;
+	}
+
+	ul {
+		li {
+			margin-left: 32px;
+		}
+		li:nth-child(1) {
+			margin-left: 0px;
+		}
 	}
 }
 // FOOTER END
 
 // SERVICE BANNER START
 .serviceBanner_container {
-	margin-top: 5rem;
+	margin-top: 7rem;
 
 	.innerServiceContainer {
 		display: flex;
@@ -284,9 +346,11 @@ a:hover {
 
 	h1 {
 		font-size: 2rem;
+		font-weight: 800;
 	}
 
 	p {
+		font-weight: 500;
 		line-height: 26px;
 
 		a {
@@ -306,14 +370,26 @@ a:hover {
 		background: #1f2937;
 		border: 1px solid #374151;
 		border-radius: 8px;
+		transition: 0.6s;
 
 		&:hover {
-			color: #01b0f9;
+			border: 1px solid $themeColor3;
+			color: $themeColor3;
 		}
 	}
 
 	button {
 		border-radius: 8px;
+		transition: 0.6s;
+
+		&:hover {
+			background: #ebebeb;
+		}
+	}
+
+	.textLink:hover {
+		color: $themeColor3;
+		border: none;
 	}
 }
 // SUPPORT BODY END
@@ -326,6 +402,7 @@ a:hover {
 		background: #1f2937;
 		border: 1px solid #374151;
 		border-radius: 8px;
+		height: 44px;
 	}
 
 	.upPara {
@@ -343,10 +420,115 @@ a:hover {
 	h5 {
 		line-height: 32px;
 	}
+
+	.iconText {
+		margin-left: 12px;
+	}
+
+	.oMission {
+		margin-bottom: 6px;
+	}
 }
 // ABOUT BODY END
 
+// CONTACT BODY START
+.contact_container {
+	margin-top: 9rem;
+	height: calc(100vh - 144px);
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		line-height: 26px;
+
+		a {
+			color: $themeColor3;
+			border: none;
+			background: transparent;
+			transition: 0.6s;
+
+			&:hover {
+				background: #ebebeb;
+				border: none;
+			}
+		}
+
+		.textLink:hover {
+			color: $themeColor3;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	.line {
+		height: 100%;
+		background: rgba(255, 255, 255, 0.1);
+		width: 1px;
+	}
+
+	a {
+		background: #1f2937;
+		border: 1px solid #374151;
+		border-radius: 8px;
+		transition: 0.6s;
+
+		&:hover {
+			border: 1px solid $themeColor3;
+			color: $themeColor3;
+		}
+	}
+
+	button {
+		border-radius: 8px;
+		height: 44px;
+	}
+
+	.form_container {
+		input,
+		textarea {
+			background: #1f2937;
+			border: 1px solid #374151;
+			border-radius: 8px;
+			color: #d1d5db;
+			height: 38px;
+			font-size: 14px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+		textarea {
+			resize: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.mtContact {
+		margin-top: 20px;
+	}
+	.mtContact:nth-child(1) {
+		margin-top: 0px;
+	}
+	.mtContact:nth-child(2) {
+		margin-top: 0px;
+	}
+}
+// CONTACT BODY END
+
 // MEDIA QUERIES START
+@media screen and (min-width: 1500px) {
+	.page_container {
+		max-width: 1376px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 @media screen and (max-width: 998px) {
 	.serviceBanner_container {
 		margin-top: 7rem;
@@ -379,16 +561,17 @@ a:hover {
 			line-height: 30px;
 		}
 
-		.bottomText {
-			line-height: 26px;
+		.btn_container {
+			display: flex;
+			flex-direction: column;
 		}
 
-		.btn_container button:nth-child(1) {
+		.btn_container a:nth-child(1) button,
+		.btn_container a:nth-child(2) button {
 			width: 100%;
 		}
-
-		.btn_container button:nth-child(2) {
-			width: 100%;
+		.btn_container a:nth-child(2) button {
+			margin-top: 12px;
 		}
 	}
 	.services_container button {
@@ -396,6 +579,9 @@ a:hover {
 	}
 	.started_container {
 		height: 100%;
+	}
+	.started_container .first {
+		margin: 0px 0px;
 	}
 	.started_container .first button {
 		width: 100%;
@@ -406,16 +592,48 @@ a:hover {
 		}
 	}
 	.support_container a {
-		width: 100%;
+		width: 45%;
 	}
 	.support_container {
 		height: 100%;
 
 		button {
-			width: 100%;
+			width: 45%;
 		}
+	}
+	.contact_container a {
+		width: 100%;
+	}
+	.support_container {
+		margin-top: 9rem;
+	}
+	.started_container .first .btn_cont button {
+		width: 100%;
+	}
+	.threeCards_container {
+		padding: 12px 0rem 58px 0rem;
+	}
+	.services_container {
+		padding: 4rem 0rem 56px 0rem;
+	}
+	.contact_container {
+		height: 100%;
+	}
+	.contact_container .mtContact:nth-child(1) {
+		margin-top: 20px;
+	}
+	.contact_container .mtContact:nth-child(2) {
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 575px) {
+	.support_container a {
+		width: 100%;
+	}
+	.support_container {
+		button {
+			width: 100%;
+		}
+	}
 }
 // MEDIA QUERIES END
