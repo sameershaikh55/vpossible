@@ -54,12 +54,7 @@ const ContactBody = () => {
 												>
 													First Name*
 												</label>
-												<input
-													className="px-2 py-1"
-													type="text"
-													name=""
-													id=""
-												/>
+												<input className="py-1" type="text" name="" id="" />
 											</div>
 											<div className="col-12 col-sm-6 d-flex flex-column mtContact">
 												<label
@@ -68,12 +63,7 @@ const ContactBody = () => {
 												>
 													Surname*
 												</label>
-												<input
-													className="px-2 py-1"
-													type="text"
-													name=""
-													id=""
-												/>
+												<input className="py-1" type="text" name="" id="" />
 											</div>
 											<div className="col-12 d-flex flex-column mtContact">
 												<label
@@ -82,12 +72,7 @@ const ContactBody = () => {
 												>
 													Email Address*
 												</label>
-												<input
-													className="px-2 py-1"
-													type="text"
-													name=""
-													id=""
-												/>
+												<input className="py-1" type="text" name="" id="" />
 											</div>
 											<div className="col-12 col-md-6 d-flex flex-column mtContact">
 												<label
@@ -96,12 +81,7 @@ const ContactBody = () => {
 												>
 													Phone*
 												</label>
-												<input
-													className="px-2 py-1"
-													type="text"
-													name=""
-													id=""
-												/>
+												<input className="py-1" type="text" name="" id="" />
 											</div>
 											<div className="col-12 col-md-6 d-flex flex-column mtContact">
 												<label
@@ -110,12 +90,7 @@ const ContactBody = () => {
 												>
 													Company*
 												</label>
-												<input
-													className="px-2 py-1"
-													type="text"
-													name=""
-													id=""
-												/>
+												<input className="py-1" type="text" name="" id="" />
 											</div>
 											<div className="col-12 d-flex flex-column mtContact">
 												<label
@@ -124,12 +99,7 @@ const ContactBody = () => {
 												>
 													Message*
 												</label>
-												<textarea
-													className="px-2 py-1"
-													name=""
-													id=""
-													rows="8"
-												/>
+												<textarea name="" id="" />
 											</div>
 										</div>
 

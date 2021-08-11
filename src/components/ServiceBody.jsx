@@ -1,5 +1,6 @@
 import React from "react";
 
+// IMPORTING IMAGES
 import s1 from "../assets/serviceImg/s1.svg";
 import s2 from "../assets/serviceImg/s2.svg";
 import s3 from "../assets/serviceImg/s3.svg";
@@ -54,16 +55,16 @@ const ServiceBody = () => {
 	];
 
 	return (
-		<div className="service_body_container">
+		<div id="services" className="service_body_container">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-8 col-lg-12 mx-auto">
+						<div className="col-11 col-md-11 col-lg-12 mx-auto">
 							<div className="row">
 								{data.map((p, ind) => {
 									const { i, t, d } = p;
 									return (
-										<div key={ind} className="col-12 col-md-6 col-lg-3 mt-4">
+										<div key={ind} className="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
 											<div>
 												<div className="mb-3">
 													<img src={i} alt="" />

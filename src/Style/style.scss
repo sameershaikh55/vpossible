@@ -102,6 +102,10 @@ hr {
 	padding: 1px;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 a:hover,
 a:hover {
 	color: $textColor;
@@ -341,7 +345,7 @@ a:hover {
 
 // SUPPORT BODY START
 .support_container {
-	height: calc(100vh - 160px);
+	margin-bottom: 56px;
 	margin-top: 10rem;
 
 	h1 {
@@ -434,7 +438,7 @@ a:hover {
 // CONTACT BODY START
 .contact_container {
 	margin-top: 9rem;
-	height: calc(100vh - 144px);
+	margin-bottom: 56px;
 
 	h1 {
 		font-size: 2rem;
@@ -486,14 +490,18 @@ a:hover {
 	}
 
 	.form_container {
+		input {
+			height: 38px;
+		}
+
 		input,
 		textarea {
 			background: #1f2937;
 			border: 1px solid #374151;
 			border-radius: 8px;
 			color: #d1d5db;
-			height: 38px;
 			font-size: 14px;
+			padding: 0px 12px;
 
 			&:focus {
 				outline: none;
@@ -501,6 +509,8 @@ a:hover {
 		}
 		textarea {
 			resize: none;
+			padding: 12px;
+			height: 185px;
 
 			&:focus {
 				outline: none;
@@ -549,9 +559,9 @@ a:hover {
 		margin-top: 9rem;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.header_container {
-		height: 95px;
+		height: 72px;
 	}
 	.hero_container {
 		padding-top: 9rem;
@@ -560,22 +570,6 @@ a:hover {
 			font-size: 1.875rem;
 			line-height: 30px;
 		}
-
-		.btn_container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.btn_container a:nth-child(1) button,
-		.btn_container a:nth-child(2) button {
-			width: 100%;
-		}
-		.btn_container a:nth-child(2) button {
-			margin-top: 12px;
-		}
-	}
-	.services_container button {
-		width: 100%;
 	}
 	.started_container {
 		height: 100%;
@@ -607,9 +601,6 @@ a:hover {
 	.support_container {
 		margin-top: 9rem;
 	}
-	.started_container .first .btn_cont button {
-		width: 100%;
-	}
 	.threeCards_container {
 		padding: 12px 0rem 58px 0rem;
 	}
@@ -625,8 +616,56 @@ a:hover {
 	.contact_container .mtContact:nth-child(2) {
 		margin-top: 20px;
 	}
+	.header_container ul li {
+		margin: 0px 10px;
+	}
+	.footer_container ul li {
+		margin-left: 28px;
+	}
+	.started_container {
+		position: relative;
+	}
+	.started_container img {
+		position: absolute;
+		top: -25%;
+		right: -22%;
+		height: 323px;
+	}
+	.started_container .first {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 668px) {
+	.started_container .first {
+		width: 64%;
+	}
+}
+@media screen and (max-width: 668px) {
+	.started_container .first {
+		width: 60%;
+	}
+	.started_container img {
+		position: absolute;
+		top: -19%;
+		right: -28%;
+		height: 350px;
+	}
 }
 @media screen and (max-width: 575px) {
+	.hero_container {
+		.btn_container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.btn_container a:nth-child(1) button,
+		.btn_container a:nth-child(2) button {
+			width: 100%;
+		}
+		.btn_container a:nth-child(2) button {
+			margin-top: 12px;
+		}
+	}
 	.support_container a {
 		width: 100%;
 	}
@@ -634,6 +673,15 @@ a:hover {
 		button {
 			width: 100%;
 		}
+	}
+	.header_container {
+		height: 95px;
+	}
+	.services_container button {
+		width: 100%;
+	}
+	.started_container .first .btn_cont button {
+		width: 100%;
 	}
 }
 // MEDIA QUERIES END

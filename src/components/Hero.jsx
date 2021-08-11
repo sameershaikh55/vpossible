@@ -30,7 +30,7 @@ const Hero = () => {
 											<button className="f600 border-0 f14">Get Started</button>
 										</NavLink>
 										<NavLink to="/service">
-											<button className="f600 ms-0 ms-md-4 f14">
+											<button className="f600 ms-0 ms-sm-4 f14">
 												Browse Services
 											</button>
 										</NavLink>

@@ -40,13 +40,13 @@ const AboutBody = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
+						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row">
-								<div className="col-12 col-md-5 d-none d-md-block pe-4">
+								<div className="col-12 col-lg-5 d-none d-md-block pe-3 pe-lg-4">
 									<img className="w-100" src={about} alt="" />
 								</div>
-								<div className="col-12 col-md-7 mt-5 mt-md-0">
-									<h6 className="text-uppercase textColor2 f600 f14 mb-3">
+								<div className="col-12 col-lg-7 mt-5 mt-md-0">
+									<h6 className="text-uppercase textColor2 f600 f14 mb-3 mt-0 mt-md-4 mt-lg-0 pt-0 pt-md-1 pt-lg-0">
 										WHo Are we
 									</h6>
 									<h1 className="f800 mb-3">
@@ -70,11 +70,7 @@ const AboutBody = () => {
 											return (
 												<div
 													key={ind}
-													className={`btns d-flex align-items-center py-2 px-3 text-center mt-3 ${
-														(ind === 0 && "ms-0") ||
-														(ind === 3 && "ms-0") ||
-														"ms-0 ms-md-3"
-													}`}
+													className={`btns d-flex align-items-center py-2 px-3 text-center mt-3 ms-0 ms-sm-3`}
 												>
 													<div className="mb-0">
 														<img src={i} alt="" />

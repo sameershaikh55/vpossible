@@ -10,13 +10,13 @@ const Header = () => {
 		<div className="header_container">
 			<div className="page_container h-100">
 				<div className="container-fluid h-100">
-					<div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center h-100">
+					<div className="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center h-100">
 						<div>
 							<NavLink to="/">
 								<img src={logo} alt="logo" />
 							</NavLink>
 						</div>
-						<div className="mt-3 mt-md-0">
+						<div className="mt-3 mt-sm-0">
 							<ul className="list-unstyled d-flex align-items-center mb-0 textColor">
 								<li className="fw500">
 									<NavLink

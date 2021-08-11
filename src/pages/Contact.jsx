@@ -10,13 +10,7 @@ const Contact = () => {
 		<div>
 			<Header />
 			<ContactBody />
-
-			<div className="position-absolute bottom-0 w-100 left-0 d-none d-md-block">
-				<Footer />
-			</div>
-			<div className="d-block d-md-none">
-				<Footer />
-			</div>
+			<Footer />
 		</div>
 	);
 };
