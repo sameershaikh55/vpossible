@@ -12,7 +12,7 @@ const Hero = () => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
-								<div className="col-12 col-md-6 col-lg-7">
+								<div className="col-12 col-md-11 mx-auto col-lg-7">
 									<p className="topText textColor2 mb-3 text-uppercase f14 f600">
 										All-Round IT Solutions For Your Business
 									</p>
@@ -36,7 +36,7 @@ const Hero = () => {
 										</NavLink>
 									</div>
 								</div>
-								<div className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+								<div className="col-12 col-md-11 mx-auto col-lg-4 mt-5 mt-md-0">
 									<img className="w-100" src={hero} alt="" />
 								</div>
 							</div>
