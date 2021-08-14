@@ -102,6 +102,11 @@ hr {
 	padding: 1px;
 }
 
+.redColor {
+	color: rgb(255, 4, 13);
+	font-size: 12px;
+}
+
 .pointer {
 	cursor: pointer;
 }
@@ -526,6 +531,11 @@ a:hover {
 	}
 	.mtContact:nth-child(2) {
 		margin-top: 0px;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		display: none;
 	}
 }
 // CONTACT BODY END

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SiFacebook, SiTwitter, SiLinkedin } from "react-icons/si";
+import { SiFacebook } from "react-icons/si";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
