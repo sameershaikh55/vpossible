@@ -2,17 +2,37 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
 
-const ContactBody = () => {
+const ContactBody = ({ status, message, onSubmitted }) => {
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
 		reset,
 	} = useForm();
+
 	const onSubmit = (data) => {
-		console.log(data);
+		const { firstname, surname, company, email, phone, messageT } = data;
+
+		// CHIMP SUBMIT FUNCTION START
+		onSubmitted({
+			FNAME: firstname,
+			LNAME: surname,
+			EMAIL: email,
+			PHONE: phone,
+			COMPANY: company,
+			MESSAGE: messageT,
+		});
+		// CHIMP SUBMIT FUNCTION END
+
 		reset();
+
+		console.log(status, "status");
+		console.log(message, "message");
 	};
+
+	if (message !== null) {
+		var messageSplit = message.split("<");
+	}
 
 	return (
 		<div>
@@ -237,11 +257,11 @@ const ContactBody = () => {
 													>
 														Message*
 													</label>
-													<textarea name="" id="" />
+													<textarea {...register("messageT")} />
 												</div>
 											</div>
 
-											<div className="mt-4 w-100">
+											<div className="mt-4 w-100 d-flex flex-column flex-lg-row align-items-center">
 												<div className="d-inline-block">
 													<button
 														type="submit"
@@ -250,6 +270,15 @@ const ContactBody = () => {
 														Submit
 													</button>
 												</div>
+												<p
+													style={{
+														color:
+															(status === "error" && "#FF5555") || "#12D28D",
+													}}
+													className="ms-3 mb-0 f14"
+												>
+													{messageSplit && messageSplit[0]}
+												</p>
 											</div>
 										</form>
 									</div>

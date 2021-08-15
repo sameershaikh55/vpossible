@@ -28,7 +28,7 @@ html {
 	font-size: 100%;
 	overflow-x: hidden;
 	background: $themeColor;
-	// scroll-behavior: auto !important;
+	scroll-behavior: auto !important;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -550,6 +550,12 @@ a:hover {
 }
 
 @media screen and (max-width: 998px) {
+	.hero_container {
+		padding-top: 133px;
+	}
+	.support_container p {
+		font-weight: 400;
+	}
 	.serviceBanner_container {
 		margin-top: 7rem;
 	}
@@ -568,13 +574,24 @@ a:hover {
 	.serviceBanner_container {
 		margin-top: 9rem;
 	}
+	.support_container a {
+		width: 100%;
+	}
+	.support_container {
+		button {
+			width: 100%;
+		}
+	}
+	.support_container {
+		margin-top: 133px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.header_container {
 		height: 72px;
 	}
 	.hero_container {
-		padding-top: 9rem;
+		padding-top: 133px;
 
 		h1 {
 			font-size: 1.875rem;
@@ -595,21 +612,18 @@ a:hover {
 			margin: -4rem 0rem -6rem 0rem;
 		}
 	}
-	.support_container a {
-		width: 45%;
-	}
+	// .support_container a {
+	// 	width: 45%;
+	// }
 	.support_container {
 		height: 100%;
 
-		button {
-			width: 45%;
-		}
+		// button {
+		// 	width: 45%;
+		// }
 	}
 	.contact_container a {
 		width: 100%;
-	}
-	.support_container {
-		margin-top: 9rem;
 	}
 	.threeCards_container {
 		padding: 12px 0rem 58px 0rem;
@@ -662,7 +676,12 @@ a:hover {
 	}
 }
 @media screen and (max-width: 575px) {
+	.support_container {
+		margin-top: 154px;
+	}
 	.hero_container {
+		padding-top: 154px;
+
 		.btn_container {
 			display: flex;
 			flex-direction: column;
@@ -674,14 +693,6 @@ a:hover {
 		}
 		.btn_container a:nth-child(2) button {
 			margin-top: 12px;
-		}
-	}
-	.support_container a {
-		width: 100%;
-	}
-	.support_container {
-		button {
-			width: 100%;
 		}
 	}
 	.header_container {

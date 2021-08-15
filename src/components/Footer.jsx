@@ -8,7 +8,11 @@ const Footer = () => {
 		<div className="footer_container">
 			<div className="page_container">
 				<div className="px-4 px-md-0">
-					<hr />
+					<div className="container-fluid">
+						<div className="col-11 col-lg-12 mx-auto">
+							<hr />
+						</div>
+					</div>
 				</div>
 				<div className="container-fluid pt-4 pb-4">
 					<ul className="list-unstyled d-flex justify-content-center mb-0">

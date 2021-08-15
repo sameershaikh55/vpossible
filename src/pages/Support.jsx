@@ -17,7 +17,7 @@ const Support = () => {
 						<div className="row">
 							<div className="col-11 col-lg-12 mx-auto">
 								<div className="row">
-									<div className="col-md-6 col-lg-4">
+									<div className="col-12 col-lg-4">
 										<h1 className="text-white mb-3">Need assistance?</h1>
 										<p className="textColor2">
 											Please use the following contact lines for technical
@@ -31,33 +31,35 @@ const Support = () => {
 											</NavLink>{" "}
 											page.
 										</p>
-										<hr className="my-5 d-block d-md-none" />
+										<hr className="my-5 d-block d-lg-none" />
 									</div>
-									<div className="col-1 px-0">
+									<div className="col-1 d-none d-lg-block px-0">
 										<div className="line ms-auto"></div>
 									</div>
-									<div className="col-md-5 col-lg-7 ps-2 ps-md-5">
-										<div className="mb-4">
-											<p className="mb6 text-white f14">Send an Email</p>
-											<div className="w-100">
-												<a
-													href="mailto:support@vpossible.com.au"
-													className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
-												>
-													support@vpossible.com.au
-												</a>
+									<div className="col-12 col-lg-7 ps-2 ps-lg-5">
+										<div className="d-flex flex-column flex-sm-row">
+											<div className="mb-4 w-100">
+												<p className="mb6 text-white f14">Send an Email</p>
+												<div className="w-100">
+													<a
+														href="mailto:support@vpossible.com.au"
+														className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
+													>
+														support@vpossible.com.au
+													</a>
+												</div>
 											</div>
-										</div>
 
-										<div className="mb-4">
-											<p className="mb6 text-white f14">Call Us</p>
-											<div className="w-100">
-												<a
-													href="tel:+61 3 9088 6275"
-													className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
-												>
-													+61 3 9088 6275
-												</a>
+											<div className="ms-0 ms-sm-4 ms-lg-0 mb-4 w-100">
+												<p className="mb6 text-white f14">Call Us</p>
+												<div className="w-100">
+													<a
+														href="tel:+61 3 9088 6275"
+														className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
+													>
+														+61 3 9088 6275
+													</a>
+												</div>
 											</div>
 										</div>
 
