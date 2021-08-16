@@ -49,7 +49,7 @@ const AboutBody = () => {
 									<h6 className="text-uppercase textColor2 f600 f14 mb-3 mt-0 mt-md-4 mt-lg-0 pt-0 pt-md-1 pt-lg-0">
 										WHo Are we
 									</h6>
-									<h1 className="f800 mb-3">
+									<h1 className="about_head f800 mb-3">
 										<span className="text-white">An Australian business,</span>
 										<br />
 										<span className="themeBlue">
@@ -64,7 +64,7 @@ const AboutBody = () => {
 										without compromising on quality and technical expertise.
 									</p>
 
-									<div className="d-flex flex-wrap align-items-center">
+									<div className="about_list d-flex flex-wrap align-items-center">
 										{data.map((p, ind) => {
 											const { i, t } = p;
 											return (

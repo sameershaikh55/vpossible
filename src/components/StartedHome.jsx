@@ -7,7 +7,7 @@ import startedHomeT from "../assets/startedHome.png";
 const StartedHome = () => {
 	return (
 		<div>
-			<div className="page_container d-block d-sm-none d-md-block">
+			<div className="page_container d-block d-sm-none d-lg-block">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
@@ -42,7 +42,7 @@ const StartedHome = () => {
 				</div>
 			</div>
 
-			<div className="page_container d-none d-sm-block d-md-none">
+			<div className="page_container d-none d-sm-block d-lg-none">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">

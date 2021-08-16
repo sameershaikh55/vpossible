@@ -19,7 +19,8 @@ $hrColor: #374151;
 // GLOBAL CLASSES START
 body {
 	overflow-x: hidden;
-	background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+	// background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+	background: $themeColor;
 	width: 100%;
 	background-repeat: no-repeat;
 }
@@ -233,6 +234,12 @@ a:hover {
 		}
 	}
 }
+.tablet_img {
+	margin-top: -2rem;
+}
+.tablet_anchor {
+	margin-top: -3.5rem;
+}
 // SERVICES END
 
 // STARTED START
@@ -284,7 +291,7 @@ a:hover {
 
 // FOOTER START
 .footer_container {
-	margin-top: 72px;
+	margin-top: 56px;
 
 	p {
 		color: #6b7280;
@@ -541,6 +548,12 @@ a:hover {
 // CONTACT BODY END
 
 // MEDIA QUERIES START
+@media screen and (min-width: 575px) {
+	.about_list {
+		margin-left: -15px;
+	}
+}
+
 @media screen and (min-width: 1500px) {
 	.page_container {
 		max-width: 1376px;
@@ -584,6 +597,15 @@ a:hover {
 	}
 	.support_container {
 		margin-top: 133px;
+	}
+	.started_container .first {
+		width: 60%;
+	}
+	.innerServiceContainer h1 {
+		font-size: 3rem;
+	}
+	.about_head {
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -657,6 +679,15 @@ a:hover {
 	}
 	.started_container .first {
 		width: 70%;
+	}
+	.innerServiceContainer h1 {
+		font-size: 1.6rem;
+	}
+	.about_head {
+		font-size: 1.6rem;
+	}
+	.about_body_container .upPara {
+		font-size: 0.875rem;
 	}
 }
 @media screen and (max-width: 668px) {

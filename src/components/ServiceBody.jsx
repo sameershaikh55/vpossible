@@ -59,12 +59,12 @@ const ServiceBody = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-11 col-lg-12 mx-auto">
+						<div className="col-11 col-md-10 col-lg-12 mx-auto">
 							<div className="row">
 								{data.map((p, ind) => {
 									const { i, t, d } = p;
 									return (
-										<div key={ind} className="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+										<div key={ind} className="col-12 col-sm-6 col-lg-3 mt-4">
 											<div>
 												<div className="mb-3">
 													<img src={i} alt="" />

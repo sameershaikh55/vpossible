@@ -51,10 +51,10 @@ const ServiceBanner = () => {
 									</div>
 								</div>
 							</div>
-							<div className="col-12 mx-auto d-none d-sm-flex d-lg-none">
+							<div className="tablet_img col-12 mx-auto d-none d-sm-flex d-lg-none">
 								<img className="w-100" src={tabletService} alt="" />
 							</div>
-							<div className="text-center d-none d-md-block d-lg-none">
+							<div className="tablet_anchor text-center d-none d-md-block d-lg-none">
 								<Link
 									to="services"
 									smooth={true}
@@ -84,7 +84,7 @@ const ServiceBanner = () => {
 					</div>
 				</div>
 			</div>
-			<div className="page_container px-4 px-md-0">
+			<div className="col-11 col-lg-12 page_container px-4 px-md-0">
 				<hr />
 			</div>
 		</>
