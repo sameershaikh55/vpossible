@@ -188,6 +188,11 @@ a:hover {
   line-height: 48px;
 }
 
+.hero_container img {
+  margin: auto;
+  max-width: 680px;
+}
+
 .threeCards_container {
   padding: 96px 0rem 58px 0rem;
 }
@@ -223,6 +228,11 @@ a:hover {
 .services_container button:hover {
   border: 1px solid #01b0f9;
   color: #01b0f9;
+}
+
+.services_container img {
+  max-width: 680px;
+  margin: auto;
 }
 
 .tablet_img {

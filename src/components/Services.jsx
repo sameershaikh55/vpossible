@@ -14,7 +14,7 @@ const Services = () => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
-								<div className="col-md-11 col-lg-5 mx-auto col-lg-4">
+								<div className="col-md-11 col-lg-5 mx-auto col-lg-4 text-center">
 									<img className="w-100" src={service} alt="" />
 								</div>
 								<div className="mt-4 mt-lg-0 col-md-11 col-lg-7 mx-auto offset-lg-1">

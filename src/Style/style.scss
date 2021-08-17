@@ -193,6 +193,11 @@ a:hover {
 		font-size: 3rem;
 		line-height: 48px;
 	}
+
+	img {
+		margin: auto;
+		max-width: 680px;
+	}
 }
 // HERO END
 
@@ -232,6 +237,11 @@ a:hover {
 			border: 1px solid $themeColor3;
 			color: $themeColor3;
 		}
+	}
+
+	img {
+		max-width: 680px;
+		margin: auto;
 	}
 }
 .tablet_img {
