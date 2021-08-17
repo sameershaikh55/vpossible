@@ -98,7 +98,7 @@ hr {
 }
 
 .redColor {
-  color: #ff040d;
+  color: #ff5555;
   font-size: 12px;
 }
 
@@ -668,6 +668,12 @@ a:hover {
   }
   .about_body_container .upPara {
     font-size: 0.875rem;
+  }
+  .btn_cont_submit {
+    width: 100%;
+  }
+  .contact_container button {
+    width: 100% !important;
   }
 }
 
