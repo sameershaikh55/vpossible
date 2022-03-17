@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-// IMPORTS
-import hero from "../assets/hero.png";
+import ThreeCards from "./ThreeCards";
 
 const Hero = () => {
 	return (
@@ -12,9 +10,9 @@ const Hero = () => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
-								<div className="col-12 col-md-11 mx-auto mx-lg-0 col-lg-7">
+								<div className="col-12 col-md-11 mx-auto mx-lg-0 col-lg-6">
 									<p className="topText textColor2 mb-3 text-uppercase f14 f600">
-										All-Round IT Solutions For Your Business
+										Diverse IT Solutions
 									</p>
 									<h1 className="mb-3">
 										<span className="themeBlue">Tailored IT Solutions</span> to
@@ -22,8 +20,9 @@ const Hero = () => {
 									</h1>
 									<p className="bottomText textColor2">
 										A wide range of network and security consulting services,
-										technology training and manage IT services to Australian
-										service provider and enterprise markets.
+										technology training <br className="d-none d-xl-block" /> and
+										manage IT services to Australian service provider and
+										enterprise markets.
 									</p>
 									<div className="btn_container">
 										<NavLink to="/contact">
@@ -36,14 +35,13 @@ const Hero = () => {
 										</NavLink>
 									</div>
 								</div>
-								<div className="col-12 col-md-11 mx-auto col-lg-4 mt-5 mt-md-0 text-center">
-									<img className="w-100" src={hero} alt="" />
-								</div>
+								<div className="col-12 col-md-11 mx-auto col-lg-4 mt-5 mt-md-0 text-center"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<ThreeCards />
 		</div>
 	);
 };

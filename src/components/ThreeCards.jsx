@@ -24,8 +24,8 @@ const ThreeCards = () => {
 	];
 
 	return (
-		<>
-			<div className="threeCards_container">
+		<div className="threeCards_container">
+			<div className="inner_threeCards_container">
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
@@ -44,7 +44,7 @@ const ThreeCards = () => {
 													</div>
 													<div className="ms-4">
 														<h5 className="text-white f14">{t}</h5>
-														<p className="textColor2 f14">{d}</p>
+														<p className="textColor2 f14 mb-0">{d}</p>
 													</div>
 												</div>
 											</div>
@@ -56,10 +56,7 @@ const ThreeCards = () => {
 					</div>
 				</div>
 			</div>
-			<div className="page_container px-4 px-md-0">
-				<hr />
-			</div>
-		</>
+		</div>
 	);
 };
 

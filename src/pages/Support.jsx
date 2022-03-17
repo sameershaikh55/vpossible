@@ -1,14 +1,80 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 // IMPORTS
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import CommonBanner from "../components/CommonBanner";
+import Accordion from "../components/Accordion";
+import Question from "../components/Question";
 
 const Support = () => {
+	const faqData = [
+		{
+			t: "Are free anti-virus softwares any good?",
+			p: (
+				<p className="mb-0">
+					First and foremost, you never want to go without security protection
+					on your computer. Free Anti-Virus has very low detection rates.{" "}
+					<a className="text-decoration-none" href="">
+						Give us a call
+					</a>{" "}
+					and we will be happy to inform you of the latest security software we
+					recommend and sell to all our clients for Spyware, Malware and Virus
+					protection.
+				</p>
+			),
+		},
+		{
+			t: "What is Cloud Backup?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What is the duration of a Managed Services contract?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "How much does Managed IT Services cost?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "How does flat rate billing save me money?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What exactly are Managed IT Services?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What kind of response times can I expect?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What should I do before I call for help?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What if we already have an internal IT department?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+		{
+			t: "What types of systems does vPossible Solutions support?",
+			p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita quidem laudantium aperiam esse earum vel sunt est officia illum! Alias fugiat illo quasi deleniti, fugit suscipit reiciendis vero aperiam repellendus minima, expedita harum saepe ab error. Beatae qui temporibus officiis in aperiam commodi delectus, vel, minima incidunt eligendi esse optio possimus at.",
+		},
+	];
+
 	return (
 		<div>
 			<Header />
+			<CommonBanner
+				banner={{
+					mainClass: "support_banner_Container",
+					aboveTitle: "Support",
+					title: "Frequently Asked Questions",
+					belowTitle:
+						"<p class='mb-0'>Got questions? We’ve got the answers you’re looking for.</p>",
+				}}
+			/>
 
 			{/* BODY START */}
 			<div className="support_container">
@@ -16,61 +82,9 @@ const Support = () => {
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-11 col-lg-12 mx-auto">
-								<div className="row">
-									<div className="col-12 col-lg-4">
-										<h1 className="text-white mb-3">Need assistance?</h1>
-										<p className="textColor2">
-											Please use the following contact lines for technical
-											support requests only. For all other enquiries, please
-											complete the form on the{" "}
-											<NavLink
-												className="textLink text-decoration-none"
-												to="/contact"
-											>
-												Contact
-											</NavLink>{" "}
-											page.
-										</p>
-										<hr className="my-5 d-block d-lg-none" />
-									</div>
-									<div className="col-1 d-none d-lg-block px-0">
-										<div className="line ms-auto"></div>
-									</div>
-									<div className="col-12 col-lg-7 ps-2 ps-lg-5">
-										<div className="d-flex flex-column flex-sm-row">
-											<div className="mb-4 w-100">
-												<p className="mb6 text-white f14">Send an Email</p>
-												<div className="w-100">
-													<a
-														href="mailto:support@vpossible.com.au"
-														className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
-													>
-														support@vpossible.com.au
-													</a>
-												</div>
-											</div>
-
-											<div className="ms-0 ms-sm-4 ms-lg-0 mb-4 w-100">
-												<p className="mb6 text-white f14">Call Us</p>
-												<div className="w-100">
-													<a
-														href="tel:+61 3 9088 6275"
-														className="text-decoration-none themeBlue f14 px-3 py-2 d-inline-block text-center"
-													>
-														+61 3 9088 6275
-													</a>
-												</div>
-											</div>
-										</div>
-
-										<div>
-											<p className="text-white mb-2 f14">Contact an Agent</p>
-											<button className="text-dark f600 f14 px-3 py-2 border-0">
-												Activate LiveChat
-											</button>
-										</div>
-									</div>
-								</div>
+								{faqData.map((prev, i) => {
+									return <Accordion t={prev.t} p={prev.p} key={i} />;
+								})}
 							</div>
 						</div>
 					</div>
@@ -78,7 +92,8 @@ const Support = () => {
 			</div>
 			{/* BODY END */}
 
-			<Footer />
+			<Question />
+			<Footer support />
 		</div>
 	);
 };

@@ -6,8 +6,14 @@ import { FiArrowRight } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+	const navigations = [
+		{ text: "Services", navigation: "/service" },
+		{ text: "About", navigation: "/about" },
+		{ text: "Support", navigation: "/support" },
+	];
+
 	return (
-		<div className="header_container">
+		<div className="header_container shadow-sm">
 			<div className="page_container h-100">
 				<div className="container-fluid h-100">
 					<div className="row h-100">
@@ -18,34 +24,26 @@ const Header = () => {
 										<img src={logo} alt="logo" />
 									</NavLink>
 								</div>
-								<div className="mt-3 mt-sm-0">
+								<div className="d-flex mt-3 mt-sm-0">
 									<ul className="list-unstyled d-flex align-items-center mb-0 textColor">
-										<li className="fw500">
-											<NavLink
-												to="/service"
-												className="text-decoration-none textColor"
-											>
-												Services
-											</NavLink>
-										</li>
-										<li className="fw500">
-											<NavLink
-												to="/support"
-												className="text-decoration-none textColor"
-											>
-												Support
-											</NavLink>
-										</li>
-										<li className="line"></li>
-										<li className="fw500">
-											<NavLink
-												to="/contact"
-												className="text-decoration-none textColor"
-											>
-												Get In-Touch <FiArrowRight color="#9CA3AF" />
-											</NavLink>
-										</li>
+										{navigations.map((item, i) => {
+											return (
+												<li key={i}>
+													<NavLink
+														to={item.navigation}
+														className="text-decoration-none textColor f500"
+													>
+														{item.text}
+													</NavLink>
+												</li>
+											);
+										})}
 									</ul>
+									<NavLink to="/contact" className="text-decoration-none">
+										<button className="fw500 text-white">
+											Get In-Touch <FiArrowRight color="#fff" />
+										</button>
+									</NavLink>
 								</div>
 							</div>
 						</div>

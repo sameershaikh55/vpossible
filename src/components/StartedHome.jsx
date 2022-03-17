@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import startedHome from "../assets/startedHome.svg";
-import startedHomeT from "../assets/startedHome.png";
+// import startedHomeT from "../assets/startedHome.png";
 
 const StartedHome = () => {
 	return (
@@ -31,8 +31,8 @@ const StartedHome = () => {
 												</NavLink>
 											</div>
 										</div>
-										<div className="w-100 d-none d-md-block">
-											<img className="w-100" src={startedHome} alt="" />
+										<div className="img_container">
+											<img src={startedHome} alt="" />
 										</div>
 									</div>
 								</div>
@@ -42,7 +42,7 @@ const StartedHome = () => {
 				</div>
 			</div>
 
-			<div className="page_container d-none d-sm-block d-lg-none">
+			{/* <div className="page_container d-none d-sm-block d-lg-none">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
@@ -75,7 +75,7 @@ const StartedHome = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

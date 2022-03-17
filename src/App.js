@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./Style/style.css";
@@ -10,7 +11,17 @@ import About from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
 
+// IMPORTING ANIMATIONS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+	useEffect(() => {
+		AOS.init({
+			once: true,
+		});
+	}, []);
+
 	return (
 		<div>
 			<ScrollToTop />

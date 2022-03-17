@@ -1,38 +1,29 @@
 import React from "react";
 
-// IMPORTING MAIL-CHIMP
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-
 // IMPORTS
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactBody from "../components/ContactBody";
-
-// API URL TO POST
-const url =
-	"https://gmail.us5.list-manage.com/subscribe/post?u=9a54d0faf94bd2b2f9f78e651&amp;id=e1ead42f0e";
+import CommonBanner from "../components/CommonBanner";
+import TechnicalAssistance from "../components/TechnicalAssistance";
 
 const Contact = () => {
 	return (
 		<div>
 			<Header />
-
-			{/* MAIL CHIMP START */}
-			<MailchimpSubscribe
-				url={url}
-				render={({ subscribe, status, message }) => (
-					<div>
-						<ContactBody
-							onSubmitted={(formData) => subscribe(formData)}
-							status={status}
-							message={message}
-						/>
-					</div>
-				)}
+			<CommonBanner
+				banner={{
+					mainClass: "contact_banner_Container",
+					aboveTitle: "Contact",
+					title: "Get In-Touch",
+					belowTitle:
+						"<p class='mb-0'>Write to us for sales or public relations enquiries, or to provide feedback. <br /> For any technical assistance, please visit our <a href='/support' class='text-decoration-none themeBlue'>Support</a> page.</p>",
+				}}
 			/>
-			{/* MAIL CHIMP END */}
 
-			<Footer />
+			<ContactBody />
+			<TechnicalAssistance />
+			<Footer contact />
 		</div>
 	);
 };
