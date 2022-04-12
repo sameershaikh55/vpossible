@@ -23,6 +23,7 @@ html {
 	font-size: 100%;
 	overflow-x: hidden;
 	scroll-behavior: auto !important;
+	transition: 0.4s;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -43,6 +44,14 @@ html {
 	html {
 		font-size: 100%;
 	}
+}
+
+button {
+	transition: 0.4s;
+}
+
+button:hover {
+	transform: translateY(-4px);
 }
 
 .page_container {
@@ -161,6 +170,7 @@ a:hover {
 		height: 36px;
 		border: none;
 		padding: 0px 15px;
+		transition: 0.4s;
 
 		a {
 			color: #fff;
@@ -295,6 +305,7 @@ a:hover {
 
 // STARTED START
 .started_container {
+	margin-top: 56px;
 	background: #1f2937;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 16px;
@@ -322,17 +333,11 @@ a:hover {
 			margin-top: 32px;
 
 			button {
+				background: #ff8811;
+				color: #ffff;
 				height: 44px;
 				width: 105px;
-			}
-		}
-		button {
-			background: #ffff;
-			border-radius: 6px;
-			transition: 0.6s;
-
-			&:hover {
-				background: #ebebeb;
+				border-radius: 6px;
 			}
 		}
 	}
@@ -707,6 +712,73 @@ a:hover {
 	}
 }
 // TECHNICAL ASSISTANCE END
+
+// STACK UP TABLE START
+.stack_competition_container {
+	padding: 80px 0px;
+	background: #f3f4f6;
+
+	.table_container {
+		.left_side {
+			div {
+				color: #374151;
+				line-height: 20px;
+				font-size: 14px;
+				font-weight: 400;
+				border-bottom: 1px solid #e5e7eb;
+				padding: 0.6rem 0rem;
+			}
+
+			div:nth-last-child(1) {
+				border-bottom: none;
+			}
+		}
+
+		.right_side_head {
+			background: #fff;
+			border-radius: 16px 16px 0px 0px;
+			box-shadow: 0px -1px -1px rgba(0, 0, 0, 0.1),
+				0px -1px -1px rgba(0, 0, 0, 0.06);
+
+			div {
+				color: #111827;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 0.6rem 0rem;
+
+				img {
+					max-width: 90px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+
+		.right_side_body {
+			box-shadow: 0px -1px -1px rgba(0, 0, 0, 0.1),
+				0px -1px -1px rgba(0, 0, 0, 0.06);
+
+			div {
+				padding: 0.5rem 0rem;
+
+				img {
+					height: 16px;
+					width: 16px;
+				}
+			}
+
+			&:nth-last-child(1) {
+				div:nth-last-child(1) {
+					border-radius: 0px 0px 16px 0px;
+				}
+				div:nth-last-child(3) {
+					border-radius: 0px 0px 0px 16px;
+				}
+			}
+		}
+	}
+}
+// STACK UP TABLE END
 
 // MEDIA QUERIES START
 @media screen and (min-width: 575px) {
