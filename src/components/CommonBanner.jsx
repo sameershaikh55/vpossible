@@ -8,7 +8,7 @@ const CommonBanner = ({ banner }) => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-10 col-lg-12 mx-auto">
+						<div className="col-12 mx-auto">
 							<div className="innerServiceContainer">
 								<h6 className="text-uppercase textColor2 f600 text-center f14 mb-2">
 									{aboveTitle}

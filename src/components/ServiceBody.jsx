@@ -29,49 +29,49 @@ const ServiceBody = () => {
 			i: i1i,
 			bg: i1,
 			t: "Managed IT Services",
-			d: "24/7 maintenance and monitoring that keeps your computers, servers, and systems up and running. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least, any emphasis objects these.",
+			d: "We provide you with dedicated 24/7 maintenance and monitoring that will keep your computers, servers and systems up and running, so you don’t have have to.",
 		},
 		{
 			i: i2i,
 			bg: i2,
 			t: "IT Consultancy",
-			d: "Our professionals are expert to demonstrate the best IT consultancy in Australia. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least, any emphasis objects these.",
+			d: "Our team of IT experts will take the time to understand your business’s IT needs and provide you with professional strategic planning and tailored IT solutions that fit your budget.",
 		},
 		{
 			i: i3i,
 			bg: i3,
-			t: "Communications",
-			d: "We help you to work anywhere from the world for 24/7. Never worry about buying a server gain. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least, any emphasis objects these.",
+			t: "Cloud Services",
+			d: "Never worry about buying a server again, as we provide your with the means to work remotely from anywhere in the world and have one-click access to all your crucial files and documents.",
 		},
 		{
 			i: i4i,
 			bg: i4,
-			t: "Cloud Services",
-			d: "We provide effective communication,and try to understand the emotion and intention behind every information. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least, any emphasis objects these.",
+			t: "Communications",
+			d: "We provide diverse remote and local communication channels to help your business and it’s stakeholders to collaborate and grow without any hiccups or disruptions.",
 		},
 		{
 			i: i5i,
 			bg: i5,
 			t: "Cloud & IT Infrastructure",
-			d: "Finding the right infrastructure and cloud solution is key to reducing IT costs and to allow for swift scalability to meet business needs. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more.",
+			d: "Finding the right infrastructure and cloud solution is key to reducing IT costs and to allow for swift scalability to meet business needs.",
 		},
 		{
 			i: i6i,
 			bg: i6,
 			t: "IT Security",
-			d: "Our experience and the powerful cybersecurity system provide you and your team to work in a safe online environment. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least.",
+			d: "With years of experience and one of the most powerful cybersecurity systems, we provide your business with a safe online environment so your don’t have to worry.",
 		},
 		{
 			i: i7i,
 			bg: i7,
 			t: "Backup & Disaster Recovery",
-			d: "Keeping your company’s data safe is important and critical as there is a notifiable data breaches occurs in the business world. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least.",
+			d: "To avoid data breaches and keep the company’s data safe at all times, we provide an all-in-one solution that helps notify you whenever a data breach occurs and manage your backups in real-time.",
 		},
 		{
 			i: i8i,
 			bg: i8,
 			t: "Helpdesk & Support Services",
-			d: "Helpdesk is a department in the organization that is responsible for answering all technical questions of the user. Competitive completely the sofa matters was occupied was harmonic the they'd more the sad. And been or me apparent if hard came them out all the afloat, blind rationalize stuffed back motivator, poured the was led economic to however, quite height even people or wanted were text more, options however be embarrassed rain of first least.",
+			d: "Our helpdesk staff are available around-the-clock to answer all of your technical questions and queries, and to provide you with useful resources to facilitate the growth of your technical knowledge.",
 		},
 	];
 
@@ -80,7 +80,7 @@ const ServiceBody = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-10 col-lg-12 mx-auto">
+						<div className="col-12 mx-auto px-3">
 							<div className="row gy-4">
 								{data.map((item, i) => {
 									return <ServiceCard2 item={item} i={i} />;

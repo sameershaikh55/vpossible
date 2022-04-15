@@ -6,10 +6,10 @@ const AboutBody = () => {
 	return (
 		<div className="about_body_container">
 			<div className="page_container">
-				<div className="container-fluid px-4">
+				<div className="container-fluid px-3 px-sm-4">
 					<div className="row">
 						<div className="col-12 col-lg-8 pe-lg-4">
-							<h2 className="f24 fw-bold mb-3">Our Mission</h2>
+							<h2 className="f24 fw-bold mb-3 textColor3">Our Mission</h2>
 
 							<p className="textColor f14">
 								With a passion for building durable and reliable IT solutions
@@ -40,10 +40,10 @@ const AboutBody = () => {
 						<div className="col-12 col-lg-4 border_right">
 							<h2 className="f24 fw-bold mb-3">Our Guarantee</h2>
 
-							<div className="d-flex flex-row flex-md-column gap-5 gap-lg-4 align-items-start">
+							<div className="d-flex flex-column flex-sm-row flex-md-column gap-4 gap-sm-5 gap-lg-4 align-items-start">
 								<div>
 									<img src={i1} alt="" />
-									<h5 className="fw-bold f14 my-2">
+									<h5 className="f500 f14 my-2 textColor3">
 										Prompt and Professional Service
 									</h5>
 									<p className="f14 textColor mb-0">
@@ -55,7 +55,7 @@ const AboutBody = () => {
 
 								<div>
 									<img src={i2} alt="" />
-									<h5 className="fw-bold f14 my-2">
+									<h5 className="f500 f14 my-2 textColor3">
 										Business Planning Assistance
 									</h5>
 									<p className="f14 textColor">

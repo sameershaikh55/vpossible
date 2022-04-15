@@ -52,7 +52,7 @@ const Footer = ({ support, contact }) => {
 					</div>
 
 					<p className="f14 text-center mb-0">
-						Copyright © 2021 vPossible Solutions. All rights reserved.
+						Copyright © 2022 vPossible Solutions. All rights reserved.
 					</p>
 				</div>
 			</div>

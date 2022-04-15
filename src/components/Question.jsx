@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Question = () => {
 	return (
@@ -9,7 +10,10 @@ const Question = () => {
 					Speak to our industry experts to resolve those pricklier technical
 					issues.
 				</p>
-				<button className="btn">Get In-Touch</button>
+
+				<Link to="/contact">
+					<button className="btn">Get In-Touch</button>
+				</Link>
 			</div>
 		</div>
 	);

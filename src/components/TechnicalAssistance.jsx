@@ -41,17 +41,19 @@ const TechnicalAssistance = () => {
 							</p>
 						</div>
 
-						<div className="row">
-							{technicalAssistance.map((content, i) => {
-								return (
-									<div key={i} className="col-4">
-										<div className="single_cta_container d-flex flex-column justify-content-center align-items-center">
-											<img className="mb-2" src={content.picture} alt="" />
-											<p className="mb-0 text-white f14">{content.text}</p>
+						<div className="container-fluid px-3">
+							<div className="row gy-3 gy-sm-0">
+								{technicalAssistance.map((content, i) => {
+									return (
+										<div key={i} className="col-12 col-md-4">
+											<div className="single_cta_container d-flex flex-row flex-sm-column justify-content-center align-items-center gap-2">
+												<img src={content.picture} alt="" />
+												<p className="mb-0 text-white f14">{content.text}</p>
+											</div>
 										</div>
-									</div>
-								);
-							})}
+									);
+								})}
+							</div>
 						</div>
 					</div>
 				</div>

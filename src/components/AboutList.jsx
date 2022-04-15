@@ -45,17 +45,19 @@ const AboutList = () => {
 
 	return (
 		<div className="about_list_container">
-			<div className="container-fluid">
-				<ul className="row_list list-unstyled d-flex flex-wrap gap-4 gap-lg-3 justify-content-center justify-content-lg-between align-items-center mb-0">
+			<div className="container-fluid px-4">
+				<ul className="row_list list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-sm-4 gap-lg-3 justify-content-sm-center justify-content-lg-between align-items-sm-center mb-0">
 					{data.map((item, i) => {
 						return (
 							<div
 								className={`${(i === 5 && "d-none d-md-block") || ""} ${
 									(i === 7 && "d-block d-md-none d-lg-none") || ""
-								} h-100`}
+								} ${
+									item.text === "line" && "d-none d-sm-block"
+								} h-100 single_about_list`}
 							>
 								{(item.text === "line" && (
-									<div className="border-start h-100 py-3"></div>
+									<div className="d-none d-sm-block border-start h-100 py-sm-3"></div>
 								)) || (
 									<li key={i} className="d-flex">
 										<img src={item.picture} alt="" />

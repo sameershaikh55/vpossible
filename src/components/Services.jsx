@@ -80,11 +80,11 @@ const Services = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
+						<div className="col-12 mx-auto px-3">
 							<div className="row">
-								<div className="col-8 mx-auto">
+								<div className="col-md-8 mx-auto">
 									<div className="text-center">
-										<p className="topText textColor text-uppercase f14 f600">
+										<p className="topText textColor text-uppercase f14 f500">
 											Services
 										</p>
 										<h1 className="mb-2">

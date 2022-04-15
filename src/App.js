@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./Style/style.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // IMPORTS
 import Home from "./pages/Home.jsx";
 import Services from "./pages/Services.jsx";

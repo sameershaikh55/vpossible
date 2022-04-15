@@ -1,17 +1,14 @@
 import React from "react";
 import AboutBanner from "../components/AboutBanner";
 import AboutBody from "../components/AboutBody";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Layout from "../Layout";
 
 const About = () => {
 	return (
-		<>
-			<Header />
+		<Layout>
 			<AboutBanner />
 			<AboutBody />
-			<Footer />
-		</>
+		</Layout>
 	);
 };
 

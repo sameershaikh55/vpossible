@@ -1,19 +1,12 @@
 import React from "react";
 
-// IMPORTS
-// import service1 from "../assets/service1.svg";
-// import service2 from "../assets/service2.svg";
-// import serviceRes from "../assets/serviceRes.svg";
-// import tabletService from "../assets/tabletService.svg";
-// import { Link } from "react-scroll";
-
 const ServiceBanner = () => {
 	return (
 		<div className="serviceBanner_container">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-10 col-lg-12 mx-auto">
+						<div className="10 col-12 mx-auto">
 							<div className="innerServiceContainer">
 								<h6 className="text-uppercase textColor2 f600 text-center f14 mb-2">
 									Services
@@ -31,21 +24,6 @@ const ServiceBanner = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* <div className="responsive_image d-block d-sm-none">
-					<img className="w-100" src={serviceRes} alt="" />
-				</div>
-				<div className="text-center d-block d-sm-none mt-4">
-					<Link
-						to="services"
-						smooth={true}
-						duration={600}
-						spy={true}
-						offset={-90}
-					>
-						<IoIosArrowDown className="pointer themeBlue h2" />
-					</Link>
-				</div> */}
 			</div>
 		</div>
 	);

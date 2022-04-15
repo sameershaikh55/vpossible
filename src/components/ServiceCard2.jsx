@@ -4,10 +4,10 @@ const ServiceCard2 = ({ item, i }) => {
 	const { bg, t, d } = item;
 
 	return (
-		<div key={i} className="col-6">
+		<div key={i} className="col-12 col-md-6">
 			<div className="service_card">
 				<div className="position-relative">
-					<img className="w-100" src={bg} alt="" />
+					<img className="w-100 card_bg" src={bg} alt="" />
 					<img className="icon" src={item.i} alt="" />
 				</div>
 

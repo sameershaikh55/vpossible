@@ -29,14 +29,16 @@ const ThreeCards = () => {
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
-							<div className="col-11 col-md-11 col-lg-12 mx-auto">
+							<div className="col-11 col-sm-10 col-lg-12 mx-auto">
 								<div className="row">
 									{data.map((p, ind) => {
 										const { i, t, d } = p;
 										return (
 											<div
 												key={ind}
-												className="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0"
+												className={`${
+													ind !== 0 && "mt-5"
+												} col-12 col-md-6 col-lg-4 mt-lg-0`}
 											>
 												<div className="d-flex">
 													<div>
