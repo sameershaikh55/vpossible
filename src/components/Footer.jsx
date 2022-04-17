@@ -21,7 +21,10 @@ const Footer = ({ support, contact }) => {
 							</NavLink>
 						</li>
 						<li className="f14">
-							<NavLink className="themeColor text-decoration-none" to="/about">
+							<NavLink
+								className="themeColor text-decoration-none f500"
+								to="/about"
+							>
 								About
 							</NavLink>
 						</li>

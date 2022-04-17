@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ item, i }) => {
 	return (
-		<div key={i} className="single_service col-12 col-sm-6 col-md-3">
+		<Link
+			to="/service"
+			key={i}
+			className="single_service col-12 col-sm-6 col-md-3"
+		>
 			<img className="w-100" src={item.bg} alt="" />
 
 			<div className="icon_para flex-column justify-content-center w-100 text-center">
@@ -16,7 +21,7 @@ const ServiceCard = ({ item, i }) => {
 					{item.title}
 				</p>
 			</div>
-		</div>
+		</Link>
 	);
 };
 

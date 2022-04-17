@@ -27,7 +27,9 @@ const Hero = () => {
 									</p>
 									<div className="btn_container">
 										<NavLink to="/contact">
-											<button className="f600 border-0 f14">Get Started</button>
+											<button className="f600 border-0 f14 textColor3">
+												Get Started
+											</button>
 										</NavLink>
 										<NavLink to="/service">
 											<button className="f500 ms-0 ms-sm-4 f14">

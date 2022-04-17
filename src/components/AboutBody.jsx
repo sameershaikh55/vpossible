@@ -38,7 +38,7 @@ const AboutBody = () => {
 							</p>
 						</div>
 						<div className="col-12 col-lg-4 border_right">
-							<h2 className="f24 fw-bold mb-3">Our Guarantee</h2>
+							<h2 className="f24 fw-bold mb-3 textColor3">Our Guarantee</h2>
 
 							<div className="d-flex flex-column flex-sm-row flex-md-column gap-4 gap-sm-5 gap-lg-4 align-items-start">
 								<div>

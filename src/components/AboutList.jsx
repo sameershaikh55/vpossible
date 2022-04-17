@@ -45,7 +45,7 @@ const AboutList = () => {
 
 	return (
 		<div className="about_list_container">
-			<div className="container-fluid px-4">
+			<div className="container-fluid">
 				<ul className="row_list list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-sm-4 gap-lg-3 justify-content-sm-center justify-content-lg-between align-items-sm-center mb-0">
 					{data.map((item, i) => {
 						return (
@@ -61,7 +61,7 @@ const AboutList = () => {
 								)) || (
 									<li key={i} className="d-flex">
 										<img src={item.picture} alt="" />
-										<p className="ms-2 mb-0 f14 fw-bold">{item.text}</p>
+										<p className="ms-2 mb-0 f14 f500 textColor3">{item.text}</p>
 									</li>
 								)}
 							</div>

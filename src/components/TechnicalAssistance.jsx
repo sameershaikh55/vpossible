@@ -9,14 +9,17 @@ const TechnicalAssistance = () => {
 		{
 			picture: i1,
 			text: "Send us an email",
+			link: "mailto:voperations@vpossible.com.au",
 		},
 		{
 			picture: i2,
 			text: "Call us on (03) 9088 6275",
+			link: "tel:(03) 9088 6275",
 		},
 		{
 			picture: i3,
 			text: "Start a Live Chat",
+			link: "/contact",
 		},
 	];
 
@@ -46,10 +49,15 @@ const TechnicalAssistance = () => {
 								{technicalAssistance.map((content, i) => {
 									return (
 										<div key={i} className="col-12 col-md-4">
-											<div className="single_cta_container d-flex flex-row flex-sm-column justify-content-center align-items-center gap-2">
-												<img src={content.picture} alt="" />
-												<p className="mb-0 text-white f14">{content.text}</p>
-											</div>
+											<a
+												href={content.link}
+												className="pointer text-decoration-none"
+											>
+												<div className="single_cta_container d-flex flex-row flex-sm-column justify-content-center align-items-center gap-2">
+													<img src={content.picture} alt="" />
+													<p className="mb-0 text-white f14">{content.text}</p>
+												</div>
+											</a>
 										</div>
 									);
 								})}

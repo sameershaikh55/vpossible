@@ -78,10 +78,6 @@ button:hover {
   color: #111827;
 }
 
-.f500 {
-  font-weight: 500;
-}
-
 .f600 {
   font-weight: 600;
 }
@@ -438,12 +434,24 @@ a:hover {
   position: absolute;
   bottom: -16px;
   left: 24px;
+  z-index: 1;
+}
+
+.service_body_container .service_card .card_bg_up::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0%;
+  bottom: -0.8rem;
 }
 
 .service_body_container .service_card .card_body {
   background: #ffffff;
   color: #111827;
   padding: 36px 24px 20px 24px;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .service_body_container .service_card .card_body h1 {
@@ -837,6 +845,7 @@ a:hover {
 
 /* ==================== SideBAR STYLING END ======================== */
 .stack_competition_container {
+  width: 100%;
   margin-bottom: 56px;
   padding: 80px 0px;
   background: #f3f4f6;
@@ -1184,9 +1193,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 24px;
   }
   .header_container {
     height: 64px;
@@ -1285,6 +1292,14 @@ img {
 .single_table_inner_body
 div:nth-child(1) {
     border-radius: 0px 16px 0px 0px;
+  }
+  .services_container .single_service:hover .icon_para {
+    display: none;
+  }
+  .services_container .single_service:hover .icon_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */

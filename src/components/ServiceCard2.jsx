@@ -6,7 +6,7 @@ const ServiceCard2 = ({ item, i }) => {
 	return (
 		<div key={i} className="col-12 col-md-6">
 			<div className="service_card">
-				<div className="position-relative">
+				<div className="card_bg_up position-relative">
 					<img className="w-100 card_bg" src={bg} alt="" />
 					<img className="icon" src={item.i} alt="" />
 				</div>
