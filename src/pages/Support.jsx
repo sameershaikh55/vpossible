@@ -7,7 +7,6 @@ import CommonBanner from "../components/CommonBanner";
 import Accordion from "../components/Accordion";
 import Question from "../components/Question";
 import Sidebar from "../components/Sidebar";
-import { Link } from "react-router-dom";
 
 const Support = () => {
 	const [isOpen, setIsOpen] = useState(false);

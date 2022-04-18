@@ -4,13 +4,22 @@ import { IoIosArrowDown } from "react-icons/io";
 const Accordion = ({ t, p }) => {
 	const [collapsed, setCollapsed] = useState(false);
 
+	const mainContEvent = () => {
+		if (collapsed === "false") {
+			setCollapsed(!collapsed);
+		}
+	};
+
 	return (
 		<div
-			onClick={() => setCollapsed(!collapsed)}
+			onClick={mainContEvent}
 			className="custom_accordion text-white pointer"
 		>
 			<div>
-				<div className="d-flex align-items-center">
+				<div
+					onClick={() => setCollapsed(!collapsed)}
+					className="d-flex align-items-center"
+				>
 					<h5
 						style={{
 							transition: "0.4s",

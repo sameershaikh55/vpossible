@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2mbfamily=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
 	padding: 0%;
@@ -1223,6 +1223,7 @@ a:hover {
 		.btn_container {
 			padding: 0px 5px;
 			display: flex;
+			justify-content: center;
 			gap: 24px;
 		}
 	}
@@ -1331,6 +1332,39 @@ a:hover {
 	}
 	.services_container .single_service:hover .icon_title {
 		display: flex;
+	}
+	.stack_up_slider_container {
+		.single_table_inner_mobile.row_ {
+			--bs-gutter-x: 1.2rem;
+			--bs-gutter-y: 1.2rem;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: calc(var(--bs-gutter-y) * -1);
+			margin-right: calc(var(--bs-gutter-x) * -0.5);
+			margin-left: calc(var(--bs-gutter-x) * -0.5);
+			margin-top: 0px;
+
+			& > * {
+				flex-shrink: 0;
+				width: 100%;
+				max-width: 100%;
+				padding-right: calc(var(--bs-gutter-x) * 0.5);
+				padding-left: calc(var(--bs-gutter-x) * 0.5);
+				margin-top: 0px;
+			}
+
+			.col_9 {
+				flex: 0 0 auto;
+				width: 80%;
+				transition: 0.6s;
+			}
+
+			.col_3 {
+				flex: 0 0 auto;
+				width: 20%;
+				transition: 0.6s;
+			}
+		}
 	}
 }
 // MEDIA QUERIES END

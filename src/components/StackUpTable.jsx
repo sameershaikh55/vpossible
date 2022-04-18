@@ -309,8 +309,8 @@ const StackUpTable = () => {
 									<div className="slider_single">
 										<p className="text-center head_text">{content}</p>
 
-										<div className="single_table_inner row">
-											<div className="col-9">
+										<div className="single_table_inner single_table_inner_mobile row_">
+											<div className="col_9">
 												<div className="single_table_inner_head row align-items-center">
 													<div className="col-12 pe-0">
 														<p className="mb-0">Traditional IT Services</p>
@@ -325,7 +325,7 @@ const StackUpTable = () => {
 													</div>
 												</div>
 											</div>
-											<div className="col-3 px-0">
+											<div className="col_3 px-0">
 												<div className="single_table_inner_body row gx-0">
 													{checks[i].checkin.map((item, ind) => {
 														return (
