@@ -1305,7 +1305,7 @@ div:nth-child(1) {
     display: flex;
   }
   .stack_up_slider_container .single_table_inner_mobile.row_ {
-    --bs-gutter-x: 1.2rem;
+    --bs-gutter-x: 0rem;
     --bs-gutter-y: 1.2rem;
     display: -webkit-box;
     display: -ms-flexbox;
