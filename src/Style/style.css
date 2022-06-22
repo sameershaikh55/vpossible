@@ -247,7 +247,7 @@ a:hover {
   margin-bottom: 0px;
 }
 
-.services_container h1 {
+.services_container h2 {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 32px;
@@ -754,11 +754,17 @@ a:hover {
   width: 100%;
 }
 
+.technical_assistance_container button:hover {
+  -webkit-transform: translate(0px) !important;
+          transform: translate(0px) !important;
+}
+
 .technical_assistance_container .text_head {
   margin-bottom: 48px;
 }
 
-.technical_assistance_container .text_head a {
+.technical_assistance_container .text_head a,
+.technical_assistance_container .text_head button {
   color: #1676be;
 }
 
@@ -987,7 +993,7 @@ a:hover {
   .support_container p {
     font-weight: 400;
   }
-  .innerServiceContainer h1 {
+  .innerServiceContainer h2 {
     font-size: 1.8rem;
   }
   .serviceBanner_container .innerServiceContainer p {
@@ -1006,7 +1012,7 @@ a:hover {
   .started_container .first {
     width: 60%;
   }
-  .innerServiceContainer h1 {
+  .innerServiceContainer h2 {
     font-size: 3rem;
   }
   .about_head {
@@ -1080,7 +1086,7 @@ a:hover {
   .started_container .first {
     width: 70%;
   }
-  .support_banner_Container .innerServiceContainer h1 {
+  .support_banner_Container .innerServiceContainer h2 {
     font-size: 32px;
     line-height: 32px;
     font-weight: 900;
@@ -1214,7 +1220,7 @@ a:hover {
   .started_container .first .btn_cont button {
     width: 100%;
   }
-  .innerServiceContainer h1 {
+  .innerServiceContainer h2 {
     font-weight: 900;
     font-size: 32px;
     line-height: 32px;
@@ -1228,7 +1234,7 @@ a:hover {
   .service_body_container .service_card .card_body p {
     font-size: 14px;
   }
-  .support_banner_Container .innerServiceContainer h1,
+  .support_banner_Container .innerServiceContainer h2,
   .support_banner_Container .innerServiceContainer p {
     width: 100%;
   }

@@ -28,8 +28,8 @@ const Header = ({ ClickEvent, isOpen }) => {
 								</div>
 								<div className="d-block d-sm-none">
 									{(isOpen && (
-										<img onClick={ClickEvent} src={cross} alt="" />
-									)) || <img onClick={ClickEvent} src={hamburger} alt="" />}
+										<img onClick={ClickEvent} src={cross} alt="hamburger" />
+									)) || <img onClick={ClickEvent} src={hamburger} alt="hamburger" />}
 								</div>
 								<div className="d-none d-sm-flex mt-3 mt-sm-0">
 									<ul className="list-unstyled d-flex align-items-center mb-0 textColor">

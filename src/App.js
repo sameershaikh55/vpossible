@@ -17,24 +17,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-	useEffect(() => {
-		AOS.init({
-			once: true,
-		});
-	}, []);
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
 
-	return (
-		<div>
-			<ScrollToTop />
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/service" component={Services} />
-				<Route exact path="/support" component={Support} />
-				<Route exact path="/about" component={About} />
-				<Route exact path="/contact" component={Contact} />
-			</Switch>
-		</div>
-	);
+  return (
+    <div>
+      <ScrollToTop />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/service" component={Services} />
+        <Route exact path="/support" component={Support} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+    </div>
+  );
 }
 
 export default App;

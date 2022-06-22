@@ -251,7 +251,7 @@ const StackUpTable = () => {
 															style={{ background: item.bg }}
 															className="col-4 text-center"
 														>
-															<img src={item.img} alt="" />
+															<img src={item.img} alt="table" />
 														</div>
 													);
 												})}
@@ -279,7 +279,7 @@ const StackUpTable = () => {
 													<p className="mb-0">Industry Standard IT Services</p>
 												</div>
 												<div className="col-4 text-center">
-													<img src={logo} alt="" />
+													<img src={logo} alt="logo" />
 												</div>
 											</div>
 											<div className="single_table_inner_body row gx-0">
@@ -290,7 +290,7 @@ const StackUpTable = () => {
 															className="col-4 text-center"
 															key={ind}
 														>
-															<img src={item.img} alt="" />
+															<img src={item.img} alt="Industry Standard IT Services" />
 														</div>
 													);
 												})}
@@ -321,7 +321,7 @@ const StackUpTable = () => {
 														</p>
 													</div>
 													<div className="col-12 pe-0">
-														<img src={logo} alt="" />
+														<img src={logo} alt="logo" />
 													</div>
 												</div>
 											</div>
@@ -334,7 +334,7 @@ const StackUpTable = () => {
 																className="col-12 text-center d-flex justify-content-center"
 																key={ind}
 															>
-																<img src={item.img} alt="" />
+																<img src={item.img} alt="logo" />
 															</div>
 														);
 													})}

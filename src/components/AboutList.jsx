@@ -60,7 +60,7 @@ const AboutList = () => {
 									<div className="d-none d-sm-block border-start h-100 py-sm-3"></div>
 								)) || (
 									<li key={i} className="d-flex">
-										<img src={item.picture} alt="" />
+										<img src={item.picture} alt={item.text} />
 										<p className="ms-2 mb-0 f14 f500 textColor3">{item.text}</p>
 									</li>
 								)}

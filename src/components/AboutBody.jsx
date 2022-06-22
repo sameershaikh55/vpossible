@@ -42,7 +42,7 @@ const AboutBody = () => {
 
 							<div className="d-flex flex-column flex-sm-row flex-md-column gap-4 gap-sm-5 gap-lg-4 align-items-start">
 								<div>
-									<img src={i1} alt="" />
+									<img src={i1} alt="Prompt and Professional Service" />
 									<h5 className="f500 f14 my-2 textColor3">
 										Prompt and Professional Service
 									</h5>
@@ -54,7 +54,7 @@ const AboutBody = () => {
 								</div>
 
 								<div>
-									<img src={i2} alt="" />
+									<img src={i2} alt="Business Planning Assistance" />
 									<h5 className="f500 f14 my-2 textColor3">
 										Business Planning Assistance
 									</h5>
