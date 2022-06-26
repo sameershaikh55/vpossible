@@ -18,15 +18,6 @@ const TechnicalAssistance = () => {
     },
   ];
 
-  const liveChat = () => {
-    const script = document.createElement("script");
-
-    script.src = "//code.tidio.co/sokfoib8mhumwigixnqduiaruav2xxvk.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-  };
-
   return (
     <div className="technical_assistance_container">
       <div className="inner_technical_assistance_container">
@@ -66,10 +57,7 @@ const TechnicalAssistance = () => {
                   );
                 })}
                 <div className="col-12 col-md-4">
-                  <button
-                    onClick={liveChat}
-                    className="pointer text-decoration-none border-0 w-100"
-                  >
+                  <button className="pointer text-decoration-none border-0 w-100">
                     <div className="single_cta_container d-flex flex-row flex-sm-column justify-content-center align-items-center gap-2">
                       <img src={i3} alt="Start a Live Chat" />
                       <p className="mb-0 text-white f14">Start a Live Chat</p>
